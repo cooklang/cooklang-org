@@ -3,10 +3,8 @@ title: 'Frequently Asked Questions'
 date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 4
-summary: Syntax highlighting and menus can be configured via `config.toml`.
+summary: Frequently Asked Questions.
 ---
-
-# Frequently Asked Questions
 
 ## Recipes
 
@@ -20,13 +18,13 @@ When you first install the app, a folder will be created at the root of your iCl
 This feature is not yet supported.
 
 ### Can I put recipes inside folders, will the app still find it?
-Yep. You can bury that .cook file in as many layers of folders as you'd like. 
+Yep. You can bury that .cook file in as many layers of folders as you'd like.
 
 ### How do I enable cooklang syntax highlighting in my text editor?
 This feature is not yet supported.
 
 ### How do I add community-made recipes?
-When you first install the app, you will be given the option to import a few sample recipes. If you would like to add 
+When you first install the app, you will be given the option to import a few sample recipes. If you would like to add
 
 ### What are the best-practices when creating a recipe?
 You can check out our full article on best-practices for creating recipes on our [github]()
@@ -46,7 +44,7 @@ You can remove a recipe by deleting the file from your .cook folder.
 ## Shopping lists
 
 ### How do I create a shopping list?
-Go to a recipe you plan to cook, and at the top of the ingredients tab will be a button labeled "Add to shopping list". This  will add all of the ingredients for that recipe (and their quantities) to your shopping list. 
+Go to a recipe you plan to cook, and at the top of the ingredients tab will be a button labeled "Add to shopping list". This  will add all of the ingredients for that recipe (and their quantities) to your shopping list.
 
 ### Can I export a shopping list to another app or format?
 In the Cook app, it is possible to export a shopping list as an email. Using the Cook command line tool, it is possible to export to other data formats (such as Json).
