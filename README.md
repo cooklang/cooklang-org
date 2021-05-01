@@ -14,7 +14,7 @@ hugo version
 
 This will output the currently installed version of Hugo. Make sure you see `/extended` after the version number, for example `Hugo Static Site Generator v0.51/extended darwin/amd64 BuildDate: unknown` You do not need to use version v0.51 specifically, you can use any version of Hugo above 0.51. It just needs to have the `/extended` part
 
-### Run Hugo 
+### Run Hugo
 
 For local development run Hugo’s built-in local server which will watch changes made and update the content in browser:
 
