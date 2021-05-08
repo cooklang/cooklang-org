@@ -13,10 +13,10 @@ If you have more than a few dozen recipes, it can be very helpful to organize yo
 You don't need to start your meal plans from scratch every time, you can always take a meal plan you've used before and add or remove recipes, or adjust servings to better suit the coming week.
 
 ### Put no-prep foods on your meal plans!
-It's nice to have an apple or banana sometimes, but it doesn't make sense to have a whole "recipe" for them. You can add these to your meal plan and shopping list manually using the edit list function. 
+It's nice to have an apple or banana sometimes, but it doesn't make sense to have a whole "recipe" for them. You can add these to your meal plan and shopping list manually using the edit list function.
 
-### If you're writing a recipe, only @mention each ingredient once. 
-After the first time, you can simply refer to the ingredient by name and relative quantity. 
+### If you're writing a recipe, only @mention each ingredient once.
+After the first time, you can simply refer to the ingredient by name and relative quantity.
 
 ### Aim for scalable recipes
 When writing a recipe, use the quantity scaling features of Cooklang to make the recipe scale as well as possible. We usually aim to support 3 different serving sizes in our sample recipes. But some recipes don't scale up or down well, and that's okay! A cake or pie won't scale nearly as well as soup.

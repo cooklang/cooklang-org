@@ -1,8 +1,13 @@
 <div id="main-menu" class="main-menu">
   <ul>
-    {{ $currentPage := . }}
+    {{ $current := . }}
     {{ range .Site.Menus.main }}
-    <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+    {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+    {{ $active = or $active (eq .Name $current.Title) }}
+    {{ $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) }}
+    {{ $active = or $active (and (eq .Name "CLI") (eq $current.Section "cli")) }}
+    {{ $active = or $active (and (eq .Name "iOS app") (eq $current.Section "app")) }}
+    <li class="menu-item-{{ .Name | lower }}{{ if $active }} active{{ end }}">
       <a href="{{ .URL }}">
         <span>{{ .Name }}</span>
       </a>
