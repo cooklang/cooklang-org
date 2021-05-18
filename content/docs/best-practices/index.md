@@ -1,7 +1,8 @@
 ---
 title: 'Tips, tricks, and best practices'
 date: 2021-04-10T19:27:37+10:00
-weight: 5
+weight: 4
+summary: Change me
 ---
 
 This is a list of ideas we think will be helpful to you in answering some more niche questions.

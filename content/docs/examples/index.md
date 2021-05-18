@@ -2,6 +2,7 @@
 title: 'Examples'
 date: 2021-04-10T19:27:37+10:00
 weight: 6
+summary: Change me
 ---
 
 
@@ -23,5 +24,4 @@ Once golden underneath, flip the pancake over and cook for 1 further minute, or 
 Serve straightaway with your favourite topping.
 ```
 
-
-More examples https://github.com/cooklang/spec/tree/main/examples
+More examples https://github.com/cooklang/spec/tree/main/examples or in [Community recipes](https://github.com/cooklang/recipes)

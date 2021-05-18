@@ -2,8 +2,8 @@
 title: 'Cooklang Specification'
 date: 2019-02-11T19:30:08+10:00
 draft: false
-weight: 4
-summary: Cooklang Specification.
+weight: 1
+summary: Change me
 ---
 
 Table of Contents
