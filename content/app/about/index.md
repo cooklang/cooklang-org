@@ -6,4 +6,10 @@ weight: 1
 summary: Change me
 ---
 
-Privacy
+Maintain your recipe files in iCloud drive and use your iPhone or iPad for cooking and shopping.
+
+Use any file structure you want.
+
+Submit for beta testing!
+
+Leave your details
