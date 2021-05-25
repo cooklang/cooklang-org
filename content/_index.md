@@ -49,6 +49,8 @@ Steps
 12. bla
 ```
 
+Also can start as a server and provide access to recipes.
+
 ## iOS app
 
 [iOS app](/app/) created to assist you while cooking, shopping and meal planning. You organise recipe files on iCloud drive on your Mac and the app will present them.

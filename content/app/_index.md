@@ -20,7 +20,9 @@ Leave your email if you like to submit for beta testing:
 
 
 Save your time - Browse recipes by time-to-prepare, create meal plans, and optimize your shopping list.
+
 Save your money - We charge once. No subscriptions, no microtransactions.
+
 Own your data - Maintain complete control and ownership of your data.
 
 Features:
