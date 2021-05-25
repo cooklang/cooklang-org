@@ -49,12 +49,12 @@ summaryLength = 30
     meta_description = "Cook is a markup language for recipes."
     meta_og_title = "Cook – Recipe Markup Language"
     meta_og_type = "website"
-    meta_og_url = "https://cooklang.org"
+    meta_og_url = "https://Cooklang.org"
     meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
     meta_og_description = "Cook is a markup language for recipes."
     meta_twitter_card = "summary"
-    meta_twitter_site = "@cooklang"
-    meta_twitter_creator = "@cooklang"
+    meta_twitter_site = "@Cooklang"
+    meta_twitter_creator = "@Cooklang"
 
   [params.logo]
       mobile = "/images/logo-mobile.svg"

@@ -19,8 +19,8 @@ Binary download:
 Package manager
 
 ```
-brew tap cooklang/tap
-brew install cooklang/tap/cli
+brew tap Cooklang/tap
+brew install Cooklang/tap/cli
 ```
 
 Binary download:

@@ -7,11 +7,9 @@ summary: Change me
 ---
 
 
-Cook will try to get configs in local directory if .cook directory is present. Also in home. Or if passed with option option.
+Cook will try to get configs in local directory if .cook directory is present. Then it will look in home directory. Or if passed with option, it will use from an option.
 
 Possible configs are aisle config, units conversion and inflection.
-
-
 
 
 ### Aisle config

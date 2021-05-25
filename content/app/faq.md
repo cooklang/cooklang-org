@@ -15,13 +15,30 @@ summary: Change me
 
 {{< detail-tag
     "How do I create a new recipe?"
-    "A recipe is just a text file using the cooklang markup language and the .cook file extension. To create a new recipe, just open a text editor and write out the steps! For details on how to use the cooklang markup language, see the [cooklang github specification page](https://github.com/cooklang/spec)."
+    "A recipe is just a text file using the Cooklang markup language and the .cook file extension. To create a new recipe, just open a text editor and write out the steps! For details on how to use the Cooklang markup language, see the [Cooklang github specification page](https://github.com/Cooklang/spec)."
 >}}
 
 {{< detail-tag
     "Where do I put a recipe file after I've created it?"
     "When you first install the app, a folder will be created at the root of your iCloud called "Cook". All Cook apps and programs will search that folder (and any sub-folders) for files related to the Cook app."
 >}}
+
+{{< detail-tag
+    "How to add pictures?"
+    `You can add images to your recipe by including a supported image file (.png,.jpg) matching the name of the recipe recipe in the same directory.
+
+    Baked Potato.cook
+    Baked Potato.jpg
+
+You can also add images for specific steps by including a step number before the file extension.
+
+    Chicken French.cook
+    Chicken French.0.jpg
+    Chicken French.3.jpg
+
+    `
+>}}
+
 
 {{< detail-tag
     "Can I change the folder that the app uses for recipes?"
@@ -34,7 +51,7 @@ summary: Change me
 >}}
 
 {{< detail-tag
-    "How do I enable cooklang syntax highlighting in my text editor?"
+    "How do I enable Cooklang syntax highlighting in my text editor?"
     "This feature is not yet supported."
 >}}
 

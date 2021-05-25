@@ -5,5 +5,4 @@ weight: 1
 summary: Change me
 ---
 
-
-Cook is a markup language
+Cooklang is the markup language at the center of an open-source ecosystem for cooking and recipe management. In Cooklang, each text file is a recipe written as plain-english instructions with markup syntax to add machine-parsible information about required ingredients, cookware, time, and metadata.

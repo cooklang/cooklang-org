@@ -5,10 +5,11 @@ weight: 6
 summary: Change me
 ---
 
+Here is an example of a full recipe.
 
 ## Easy pancakes
 
-```
+```ng2
 // Source: https://www.jamieoliver.com/recipes/eggs-recipes/easy-pancakes/
 
 Crack the @eggs{3} into a blender, then add the @flour{125%g}, @milk{250%ml} and @sea salt{1%pinch}, and blitz until smooth.
@@ -24,4 +25,4 @@ Once golden underneath, flip the pancake over and cook for 1 further minute, or 
 Serve straightaway with your favourite topping.
 ```
 
-More examples https://github.com/cooklang/spec/tree/main/examples or in [Community recipes](https://github.com/cooklang/recipes)
+More examples https://github.com/Cooklang/spec/tree/main/examples or in [Community recipes](https://github.com/Cooklang/recipes)

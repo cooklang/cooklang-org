@@ -6,14 +6,14 @@ weight: 50
 summary: Change me
 ---
 
+There're community recipes. Go to browse [Community recipes](https://github.com/Cooklang/recipes).
+
 ```
-cook community import dinners/mexican/Baked Potato ./
+cook community fetch dinners/mexican/Baked Potato ./
 ```
 
-or no output will save here
-
-Go [Community recipes](https://github.com/cooklang/recipes)
-
-## How to get
+It's possible to set file name also.
 
 ## How to add recipes
+
+Open a pull request with your recipe. Done.

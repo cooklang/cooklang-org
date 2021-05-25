@@ -3,14 +3,22 @@ title: 'Cook – Recipe Markup Language'
 date: 2021-05-20T15:14:39+10:00
 ---
 
-Cook is an open source markup language that helps to manage recipes in simple, flexible and something way.
+Cook is the markup language at the center of an open-source ecosystem for cooking and recipe management.
 
-* Readable as regular text – we thrive for simplicity
-* Everything is a file – that means easy to organise, share and change (iterate)
-* Small tool built in UNIX way
+Together with tools based on it it aims to:
+* simplify personal recipe management;
+* reduce shopping routine;
+* make cooking more fun.
+
+> Cook ecosystem features:
+> * Recipes are all in human-readable format.
+> * Everything stored as files. That means it's easy to organize, share and improve your recipes as often as needed. Symlinks make its easy to create meal plans.
+> * Embraces UNIX way: small but sharp tool for just one task.
 
 
-To get started with Cook, create a recipe file, tag ingredients with @ and now you have you recipe ready:
+## How to get started with Cook
+
+Create a recipe file, tag ingredients with @ and now you have your recipe ready:
 
 ```
 Then add @salt and @ground black pepper{} to taste.
@@ -20,12 +28,12 @@ Poke holes in @potato{2}.
 Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
 ```
 
-There're a few more things to it. Check our human friendly [Language Specification](/docs/spec/).
+There are a few more things to it. Check out full [Language Specification](/docs/spec/).
 
 
 ## Cook CLI
 
-[Cook CLI](/cli/) helps to create shopping lists and maintain recipes. It provides great help in automating the routine related to shopping. Can be accessed from UNIX command-line and can provide great help with custom scripts you create.
+[Cook CLI](/cli/) helps to create shopping lists and maintain recipes. It provides great help in automating the routine related to shopping. Can be accessed from UNIX command-line and useful for scripting you create to automate your routine.
 
 
 ```
@@ -43,8 +51,7 @@ Steps
 
 ## iOS app
 
-[iOS app](/app/) nicely presents your recipe files from iCloud drive and you can use it while cooking or for shopping and meal planning.
-
+[iOS app](/app/) created to assist you while cooking, shopping and meal planning. You organise recipe files on iCloud drive on your Mac and the app will present them.
 
 ![Recipes](/app/recipes.png)
 ![Recipe](/app/recipe-ingredients.png)

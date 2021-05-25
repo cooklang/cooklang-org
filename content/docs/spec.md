@@ -6,8 +6,6 @@ weight: 1
 summary: Change me
 ---
 
-
-* [About Cooklang](#about-cooklang)
 * [The .cook Recipe Specification](#the-cook-recipe-specification)
    * [Ingredients](#ingredients)
    * [Comments](#comments)
@@ -18,11 +16,8 @@ summary: Change me
 * [Adding Pictures](#adding-pictures)
 * [The Shopping List Specification](#the-shopping-list-specification)
 
-## About Cooklang
-Cooklang is the markup language at the center of an open-source ecosystem for cooking and recipe management. In Cooklang, each text file is a recipe written as plain-english instructions with markup syntax to add machine-parsible information about required ingredients, cookware, time, and metadata.
-
 ## The .cook Recipe Specification
-Below is the specification for defining a recipe in cooklang.
+Below is the specification for defining a recipe in Cooklang.
 
 ### Ingredients
 
@@ -50,7 +45,7 @@ Top with @green onions{1%tbsp}(finely chopped)
 ```
 
 ### Comments
-You can add comments to cooklang text with `//`.
+You can add comments to Cooklang text with `//`.
 ```
 // Don't burn the roux!
 
@@ -119,7 +114,7 @@ Chicken French.3.jpg
 ```
 
 ## The Shopping List Specification
-To support the creation of shopping lists by apps and the command line tool, cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
+To support the creation of shopping lists by apps and the command line tool, Cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
 You can use `[]` to define a category name. These names are arbitrary, so you can customize them to meet your needs. For example, each category could be an aisle or section of the store, such as `[produce]` and `[deli]`.
 ```
 [produce]
