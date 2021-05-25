@@ -32,9 +32,9 @@ Also possible to format the output. Supported formats are json and yaml:
 cook recipe read -output-format=json ./Baked Potato.cook
 ```
 
-`-ingredients-only`
+`-only-ingredients`
 
-`-steps-only`
+`-only-steps`
 
 For rendering machine-friendly output
 
