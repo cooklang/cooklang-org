@@ -1,53 +1,25 @@
 ---
-title: 'iOS app with Cook support'
-date: 2018-11-28T15:14:39+10:00
+title: 'iOS Recipe reader for Cooklang'
+date: 2021-05-20T15:14:39+10:00
 ---
 
-## CookApp - Recipe reader for Cooklang
 
-**Promo text**
-Make cooking as quick and easy as possible with CookApp!
+Maintain your recipe files in iCloud drive and use your iPhone or iPad for cooking and shopping.
 
-**Description**
-Save your time - Browse recipes by time-to-prepare, create meal plans, and optimize your shopping list.
-Save your money - We charge once. No subscriptions, no microtransactions.
-Own your data - Maintain complete control and ownership of your data.
+Use any file structure you want.
 
-Note: Requires a Mac to create and edit recipes
+Submit for beta testing!
 
-Features:
-- Read recipe files written in the Cooklang markup language.
-- Import recipes from the community recipe repository.
-- Create meal plans for each week, and then generate a shopping list.
-- Export shopping lists to email.
+Leave your details
 
-======================================================================
-
-## CookApp - Quick and easy cooking
-
-**Promo text**
-Make cooking as quick and easy as possible with CookApp, the best reader for Cooklang recipes!
 Note: Requires a Mac to create and edit recipes.
 
-**Description**
-Save your time - Browse recipes by time-to-prepare, create meal plans, and optimize your shopping list.
-Save your money - We charge once. No subscriptions, no microtransactions.
-Own your data - Maintain complete control and ownership of your data.
+![Recipes](/app/recipes.png)
+![Recipe](/app/recipe-ingredients.png)
+![Shopping list](/app/shopping-list.png)
 
-Features:
-- Read recipe files written in the .cook markup language.
-- Import recipes from the community recipe repository.
-- Create meal plans for each week, and then generate a shopping list.
-- Export shopping lists to email.
 
-=======================================================================
-## CookApp - Recipe reader for Cooklang
 
-**Promo text**
-Make cooking as quick and easy as possible with CookApp, the best reader for Cooklang recipes!
-Note: Requires a Mac to create and edit recipes.
-
-**Description**
 
 Save your time - Browse recipes by time-to-prepare, create meal plans, and optimize your shopping list.
 Save your money - We charge once. No subscriptions, no microtransactions.

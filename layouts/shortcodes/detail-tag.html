@@ -2,6 +2,6 @@
 {{ $content := .Get 1 }}
 
 <details>
-  <summary>{{$summary}}</summary>
-  <p>{{$content}}</p>
+  <summary>{{ $summary }}</summary>
+  <p>{{ .Page.RenderString $content }}</p>
 </details>

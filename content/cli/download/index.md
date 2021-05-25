@@ -1,8 +1,8 @@
 ---
 title: 'Download Cook CLI'
-date: 2019-02-11T19:30:08+10:00
+date: 2021-05-20T19:30:08+10:00
 draft: false
-weight: 80
+weight: 5
 summary: Change me
 ---
 

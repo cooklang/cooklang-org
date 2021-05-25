@@ -1,13 +1,11 @@
 ---
 title: 'Cooklang Specification'
-date: 2019-02-11T19:30:08+10:00
+date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 1
 summary: Change me
 ---
 
-Table of Contents
-=================
 
 * [About Cooklang](#about-cooklang)
 * [The .cook Recipe Specification](#the-cook-recipe-specification)

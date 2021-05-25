@@ -1,6 +1,6 @@
 ---
 title: 'Cook – Recipe Markup Language'
-date: 2018-11-28T15:14:39+10:00
+date: 2021-05-20T15:14:39+10:00
 ---
 
 Cook is an open source markup language that helps to manage recipes in simple, flexible and something way.
