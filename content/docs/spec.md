@@ -3,7 +3,7 @@ title: 'Cooklang Specification'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 1
-summary: Change me
+summary: This is the specification and reference for writing a recipe in Cooklang.
 ---
 
 * [The .cook Recipe Specification](#the-cook-recipe-specification)

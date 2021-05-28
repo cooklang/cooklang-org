@@ -2,7 +2,7 @@
 title: 'Examples'
 date: 2021-05-20T19:27:37+10:00
 weight: 6
-summary: Change me
+summary: Some examples of recipes written in Cooklang.
 ---
 
 Here is an example of a full recipe.

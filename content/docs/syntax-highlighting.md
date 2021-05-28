@@ -2,7 +2,7 @@
 title: 'Syntax Highlighting'
 date: 2021-05-20T19:27:37+10:00
 weight: 5
-summary: Change me
+summary: Instructions for installing syntax highlighting addons for some of the most popular markdown text editors.
 ---
 
 * [Sublime via Package Control](#sublime-via-package-control)

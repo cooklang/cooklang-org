@@ -2,7 +2,7 @@
 title: 'Tips, tricks, and best practices'
 date: 2021-05-20T19:27:37+10:00
 weight: 4
-summary: Change me
+summary: This is a list of ideas we think will be helpful to you in answering some more niche questions.
 ---
 
 This is a list of ideas we think will be helpful to you in answering some more niche questions.
