@@ -3,7 +3,7 @@ title: 'Shopping List'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 20
-summary: Change me
+summary: Managing, editing, and exporting shopping lists
 ---
 
 

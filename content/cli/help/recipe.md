@@ -3,7 +3,7 @@ title: 'Recipe'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 10
-summary: Change me
+summary: How to use the `recipe` command.
 ---
 
 

@@ -3,7 +3,7 @@ title: 'Community'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 50
-summary: Change me
+summary: Check out our community recipe repository.
 ---
 
 There're community recipes. Go to browse [Community recipes](https://github.com/Cooklang/recipes).

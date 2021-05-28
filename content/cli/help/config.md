@@ -3,7 +3,7 @@ title: 'Config'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 40
-summary: Change me
+summary: Details on configuring the various options for CookCLI.
 ---
 
 
