@@ -6,7 +6,7 @@ weight: 10
 summary: How to use the `recipe` command.
 ---
 
-
+The `cook recipe` command is the core of the CookCLI toolset. It features four subcommands: `read`, `validate`, `prettify`, `image`
 
 As last argument user can pass any particular recipe, multiple recipes or directory (to use all cook files in directory) also STDIN
 

@@ -6,11 +6,6 @@ weight: 3
 summary: The questions we're pretty sure you want to know the answers to.
 ---
 
-
-* [Recipes](#recipes)
-* [Shopping lists](#shopping-lists)
-
-
 ## Recipes
 
 {{< detail-tag
@@ -24,8 +19,8 @@ summary: The questions we're pretty sure you want to know the answers to.
 >}}
 
 {{< detail-tag
-    "How to add pictures?"
-    `You can add images to your recipe by including a supported image file (.png,.jpg) matching the name of the recipe recipe in the same directory.
+    "How do I add pictures to my recipes?"
+    `You can add images to your recipe by including a supported image file (.png or .jpg) matching the name of the recipe recipe in the same directory.
 
     Baked Potato.cook
     Baked Potato.jpg
@@ -52,17 +47,17 @@ You can also add images for specific steps by including a step number before the
 
 {{< detail-tag
     "How do I enable Cooklang syntax highlighting in my text editor?"
-    "This feature is not yet supported."
+    "We have instructions for that on our [Docs page](/docs/syntax-highlighting/)."
 >}}
 
 {{< detail-tag
     "How do I add community-made recipes?"
-    "When you first install the app, you will be given the option to import a few sample recipes. If you would like to add"
+    "When you first install the app, you will be given the option to import a few sample recipes. If you would like to add more, check out our [Community page](https://cooklang.org/cli/help/community/) or go directly to our [Community recipes GitHub repository](https://github.com/Cooklang/recipes)."
 >}}
 
 {{< detail-tag
     "What are the best-practices when creating a recipe?"
-    "You can check out our full article on best-practices for creating recipes on our [github]()"
+    "Check out our [best-practices page](/docs/best-practices/)."
 >}}
 
 {{< detail-tag

@@ -37,23 +37,8 @@ Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
 
 ## CookCLI
 
-The [Cook CLI](/cli/) command line program provides a suite of tools to create shopping lists and maintain recipes. We've built it to be simple and useful for automating your cooking and shopping routine with existing UNIX command line and scripting tools. 
+The [Cook CLI](/cli/) command line program provides a suite of tools to create shopping lists and maintain recipes. We've built it to be simple and useful for automating your cooking and shopping routine with existing UNIX command line and scripting tools. It can also function as a web server for your recipes, making them browsable on any device with a web browser.
 
-
-```
-$ cook recipe read ./Baked Potato.cook
-Ingredients
-+++++++++++
-bla bla bla
-
-Steps
-+++++
-1. bla
-...
-12. bla
-```
-
-Also can start as a server and provide access to recipes.
 
 ## iOS app
 
