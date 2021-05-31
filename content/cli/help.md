@@ -8,6 +8,23 @@ summary: Full documentation for CookCLI on Linux and MacOS.
 
 This documentation is a work in progress.
 
+Table of Contents
+=================
+
+* [$ cook --help](#-cook---help)
+   * [$ cook recipe --help](#-cook-recipe---help)
+      * [$ cook recipe read --help](#-cook-recipe-read---help)
+      * [$ cook recipe validate --help](#-cook-recipe-validate---help)
+      * [$ cook recipe prettify --help](#-cook-recipe-prettify---help)
+      * [$ cook recipe image --help](#-cook-recipe-image---help)
+   * [$ cook shopping-list --help](#-cook-shopping-list---help)
+   * [$ cook community --help](#-cook-community---help)
+      * [$cook community fetch --help](#cook-community-fetch---help)
+   * [$ cook server --help](#-cook-server---help)
+   * [$ cook version --help](#-cook-version---help)
+* [Questions and Issues](#questions-and-issues)
+
+
 # `$ cook --help` 
 
 ```
