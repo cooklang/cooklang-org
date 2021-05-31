@@ -18,8 +18,7 @@ Table of Contents
       * [$ cook recipe prettify --help](#-cook-recipe-prettify---help)
       * [$ cook recipe image --help](#-cook-recipe-image---help)
    * [$ cook shopping-list --help](#-cook-shopping-list---help)
-   * [$ cook community --help](#-cook-community---help)
-      * [$cook community fetch --help](#cook-community-fetch---help)
+   * [$ cook fetch --help](#-cook-fetch---help)
    * [$ cook server --help](#-cook-server---help)
    * [$ cook version --help](#-cook-version---help)
 * [Questions and Issues](#questions-and-issues)
@@ -28,16 +27,21 @@ Table of Contents
 # `$ cook --help` 
 
 ```
-Usage: cook COMMAND
+Usage: cook [OPTIONS] COMMAND
 
 A toolkit for command-line interaction with cooklang text files
 
+Options:
+  -aisle        Specify an aisle.conf file to override shopping list default settings
+  -units        Specify a units.conf file to override units default settings
+  -inflection   Specify an inflection.conf file to override default inflection settings
+
 Commands:
-  recipe			Manage recipes and recipe files
-  shopping-list		Create a shopping list
-  community			Pull recipes from the community recipe repository
-  server			Run a webserver to serve your recipes on the web
-  version			Show the CookCLI version information
+  recipe	     	   Manage recipes and recipe files
+  shopping-list	   Create a shopping list
+  fetch 			     Pull recipes from the community recipe repository
+  server			     Run a webserver to serve your recipes on the web
+  version			     Show the CookCLI version information
 
 Run `cook COMMAND --help` for more information on a command.
 ```
@@ -50,10 +54,10 @@ Usage: cook recipe COMMAND
 Read and edit cooklang recipe files
 
 Commands:
-read 		Parse and print a cooklang recipe file
-validate	Check for syntax errors in a cooklang recipe file
+read 		  Parse and print a cooklang recipe file
+validate	Check for syntax errors in one or more cooklang recipe files
 prettify	Edit a cooklang recipe file for style consistency
-image		Download a random image from upsplash.com to match the recipe title
+image		  Download a random image from upsplash.com to match the recipe title
 
 Run `cook recipe COMMAND --help` for more information on a command.
 ```
@@ -75,9 +79,9 @@ Options:
 ### `$ cook recipe validate --help`
 
 ```
-Usage: cook recipe validate FILE
+Usage: cook recipe validate FILE...
 
-Validate the cooklang syntax of a cooklang recipe file
+Validate the cooklang syntax of one or more cooklang recipe files
 ```
 
 ### `$ cook recipe prettify --help`
@@ -112,23 +116,10 @@ Options:
 ```
 
 
-## `$ cook community --help`
+## `$ cook fetch --help`
 
 ```
-Usage: cook community COMMAND
-
-A utility for interacting with the cook community recipe repository
-
-Commands:
-  fetch		Pull a recipe from the community recipe repository
-
-Run `cook community COMMAND --help` for more information on a command.
-```
-
-### `$cook community fetch --help`
-
-```
-Usage: cook community fetch RECIPE [FILE]
+Usage: cook fetch RECIPE [FILE]
 
 Pull a recipe (as a subdirectory of https://github.com/cooklang/recipes/), optionally as a specified file name
 ```
