@@ -1,14 +1,19 @@
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Using CookCLI - Cook: recipe markup language</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.png><link rel=stylesheet href=/css/style.min.b436e6f59db70e0e53ac5ccf788c09510f1c68d16f1b2ed35994f924a0d56000.css></head><body class="page page-default-single"><div id=main-menu-mobile class=main-menu-mobile><ul><li class=menu-item-home><a href=/><span>Home</span></a></li><li class=menu-item-docs><a href=/docs/><span>Docs</span></a></li><li class=menu-item-cli><a href=/cli/><span>CLI</span></a></li><li class="menu-item-ios app"><a href=/app/><span>iOS app</span></a></li></ul></div><div class=wrapper><div class=header><div class=container><div class=logo><a href=/><img alt=Logo src=/images/logo.svg></a></div><div class=logo-mobile><a href=/><img alt=Logo src=/images/logo-mobile.svg></a></div><div id=main-menu class=main-menu><ul><li class=menu-item-home><a href=/><span>Home</span></a></li><li class=menu-item-docs><a href=/docs/><span>Docs</span></a></li><li class="menu-item-cli active"><a href=/cli/><span>CLI</span></a></li><li class="menu-item-ios app"><a href=/app/><span>iOS app</span></a></li></ul></div><button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
-<span class=hamburger-box><span class=hamburger-inner></span></span></button></div></div><div class="container pt-2 pt-md-6 pb-3 pb-md-6"><div class=row><div class="col-12 col-md-3 mb-3"><div class=sidebar><div class=docs-menu><h4>CLI</h4><ul><li class=active><a href=/cli/help/>Using CookCLI</a></li><li><a href=/cli/download/>Download Cook CLI</a></li><li><a href=/cli/help/recipe/>Recipe</a></li><li><a href=/cli/help/shopping-list/>Shopping List</a></li><li><a href=/cli/help/server/>Server</a></li><li><a href=/cli/help/config/>Config</a></li><li><a href=/cli/help/community/>Community</a></li></ul></div></div></div><div class="col-12 col-md-9"><h1 class=title>Using CookCLI</h1><div class=content><p>This documentation is a work in progress.</p><h1 id=table-of-contents>Table of Contents</h1><ul><li><a href=#-cook---help>$ cook &ndash;help</a><ul><li><a href=#-cook-recipe---help>$ cook recipe &ndash;help</a><ul><li><a href=#-cook-recipe-read---help>$ cook recipe read &ndash;help</a></li><li><a href=#-cook-recipe-validate---help>$ cook recipe validate &ndash;help</a></li><li><a href=#-cook-recipe-prettify---help>$ cook recipe prettify &ndash;help</a></li><li><a href=#-cook-recipe-image---help>$ cook recipe image &ndash;help</a></li></ul></li><li><a href=#-cook-shopping-list---help>$ cook shopping-list &ndash;help</a></li><li><a href=#-cook-community---help>$ cook community &ndash;help</a><ul><li><a href=#cook-community-fetch---help>$cook community fetch &ndash;help</a></li></ul></li><li><a href=#-cook-server---help>$ cook server &ndash;help</a></li><li><a href=#-cook-version---help>$ cook version &ndash;help</a></li></ul></li><li><a href=#questions-and-issues>Questions and Issues</a></li></ul><h1 id=-cook---help><code>$ cook --help</code></h1><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook COMMAND
+<span class=hamburger-box><span class=hamburger-inner></span></span></button></div></div><div class="container pt-2 pt-md-6 pb-3 pb-md-6"><div class=row><div class="col-12 col-md-3 mb-3"><div class=sidebar><div class=docs-menu><h4>CLI</h4><ul><li class=active><a href=/cli/help/>Using CookCLI</a></li><li><a href=/cli/download/>Download Cook CLI</a></li><li><a href=/cli/help/recipe/>Recipe</a></li><li><a href=/cli/help/shopping-list/>Shopping List</a></li><li><a href=/cli/help/server/>Server</a></li><li><a href=/cli/help/config/>Config</a></li><li><a href=/cli/help/community/>Fetch</a></li></ul></div></div></div><div class="col-12 col-md-9"><h1 class=title>Using CookCLI</h1><div class=content><p>This documentation is a work in progress.</p><h1 id=table-of-contents>Table of Contents</h1><ul><li><a href=#-cook---help>$ cook &ndash;help</a><ul><li><a href=#-cook-recipe---help>$ cook recipe &ndash;help</a><ul><li><a href=#-cook-recipe-read---help>$ cook recipe read &ndash;help</a></li><li><a href=#-cook-recipe-validate---help>$ cook recipe validate &ndash;help</a></li><li><a href=#-cook-recipe-prettify---help>$ cook recipe prettify &ndash;help</a></li><li><a href=#-cook-recipe-image---help>$ cook recipe image &ndash;help</a></li></ul></li><li><a href=#-cook-shopping-list---help>$ cook shopping-list &ndash;help</a></li><li><a href=#-cook-fetch---help>$ cook fetch &ndash;help</a></li><li><a href=#-cook-server---help>$ cook server &ndash;help</a></li><li><a href=#-cook-version---help>$ cook version &ndash;help</a></li></ul></li><li><a href=#questions-and-issues>Questions and Issues</a></li></ul><h1 id=-cook---help><code>$ cook --help</code></h1><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook [OPTIONS] COMMAND
 
 A toolkit for command-line interaction with cooklang text files
 
+Options:
+  -aisle        Specify an aisle.conf file to override shopping list default settings
+  -units        Specify a units.conf file to override units default settings
+  -inflection   Specify an inflection.conf file to override default inflection settings
+
 Commands:
-  recipe			Manage recipes and recipe files
-  shopping-list		Create a shopping list
-  community			Pull recipes from the community recipe repository
-  server			Run a webserver to serve your recipes on the web
-  version			Show the CookCLI version information
+  recipe	     	   Manage recipes and recipe files
+  shopping-list	   Create a shopping list
+  fetch 			     Pull recipes from the community recipe repository
+  server			     Run a webserver to serve your recipes on the web
+  version			     Show the CookCLI version information
 
 Run `cook COMMAND --help` for more information on a command.
 </code></pre></div><h2 id=-cook-recipe---help><code>$ cook recipe --help</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe COMMAND
@@ -16,10 +21,10 @@ Run `cook COMMAND --help` for more information on a command.
 Read and edit cooklang recipe files
 
 Commands:
-read 		Parse and print a cooklang recipe file
-validate	Check for syntax errors in a cooklang recipe file
+read 		  Parse and print a cooklang recipe file
+validate	Check for syntax errors in one or more cooklang recipe files
 prettify	Edit a cooklang recipe file for style consistency
-image		Download a random image from upsplash.com to match the recipe title
+image		  Download a random image from upsplash.com to match the recipe title
 
 Run `cook recipe COMMAND --help` for more information on a command.
 </code></pre></div><h3 id=-cook-recipe-read---help><code>$ cook recipe read --help</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe read [OPTIONS] FILE
@@ -31,9 +36,9 @@ Options:
   -only-ingredients				Print only the ingredients section of the output
   -only-steps					Print only the steps section of the output
   -compact						Print a machine-friendly version of the output
-</code></pre></div><h3 id=-cook-recipe-validate---help><code>$ cook recipe validate --help</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe validate FILE
+</code></pre></div><h3 id=-cook-recipe-validate---help><code>$ cook recipe validate --help</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe validate FILE...
 
-Validate the cooklang syntax of a cooklang recipe file
+Validate the cooklang syntax of one or more cooklang recipe files
 </code></pre></div><h3 id=-cook-recipe-prettify---help><code>$ cook recipe prettify --help</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe prettify FILE
 
 Edit the content of a cooklang recipe file for style consistency
@@ -48,15 +53,7 @@ Options:
   -output-format={json|yaml}	Specify the output format of the shopping list file (default json)
   -only-ingredients				???
   -compact						???
-</code></pre></div><h2 id=-cook-community---help><code>$ cook community --help</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook community COMMAND
-
-A utility for interacting with the cook community recipe repository
-
-Commands:
-  fetch		Pull a recipe from the community recipe repository
-
-Run `cook community COMMAND --help` for more information on a command.
-</code></pre></div><h3 id=cook-community-fetch---help><code>$cook community fetch --help</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook community fetch RECIPE [FILE]
+</code></pre></div><h2 id=-cook-fetch---help><code>$ cook fetch --help</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook fetch RECIPE [FILE]
 
 Pull a recipe (as a subdirectory of https://github.com/cooklang/recipes/), optionally as a specified file name
 </code></pre></div><h2 id=-cook-server---help><code>$ cook server --help</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook server [OPTIONS]
