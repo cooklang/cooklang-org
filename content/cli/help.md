@@ -11,25 +11,25 @@ This documentation is a work in progress.
 Table of Contents
 =================
 
-* [$ cook --help](#-cook---help)
-   * [$ cook recipe --help](#-cook-recipe---help)
-      * [$ cook recipe read --help](#-cook-recipe-read---help)
-      * [$ cook recipe validate --help](#-cook-recipe-validate---help)
-      * [$ cook recipe prettify --help](#-cook-recipe-prettify---help)
-      * [$ cook recipe image --help](#-cook-recipe-image---help)
-   * [$ cook shopping-list --help](#-cook-shopping-list---help)
-   * [$ cook fetch --help](#-cook-fetch---help)
-   * [$ cook server --help](#-cook-server---help)
-   * [$ cook version --help](#-cook-version---help)
+* [cook](#cook)
+   * [recipe](#recipe)
+      * [read](#read)
+      * [validate](#validate)
+      * [prettify](#prettify)
+      * [image](#image)
+   * [shopping-list](#shopping-list)
+   * [fetch](#fetch)
+   * [server](#server)
+   * [version](#version)
 * [Questions and Issues](#questions-and-issues)
 
 
-# `$ cook --help` 
+# `cook` 
 
 ```
 Usage: cook [OPTIONS] COMMAND
 
-A toolkit for command-line interaction with cooklang text files
+A toolkit for command-line interaction with CookLang text files
 
 Options:
   -aisle        Specify an aisle.conf file to override shopping list default settings
@@ -46,28 +46,28 @@ Commands:
 Run `cook COMMAND --help` for more information on a command.
 ```
 
-## `$ cook recipe --help`
+## `recipe`
 
 ```
 Usage: cook recipe COMMAND
 
-Read and edit cooklang recipe files
+Read and edit CookLang recipe files
 
 Commands:
-read 		  Parse and print a cooklang recipe file
-validate	Check for syntax errors in one or more cooklang recipe files
-prettify	Edit a cooklang recipe file for style consistency
+read 		  Parse and print a CookLang recipe file
+validate	Check for syntax errors in one or more CookLang recipe files
+prettify	Edit a CookLang recipe file for style consistency
 image		  Download a random image from upsplash.com to match the recipe title
 
 Run `cook recipe COMMAND --help` for more information on a command.
 ```
 
-### `$ cook recipe read --help`
+### `read`
 
 ```
 Usage: cook recipe read [OPTIONS] FILE
 
-Parse and print a cooklang recipe file
+Parse and print a CookLang recipe file
 
 Options:
   -output-format={json|yaml}	Set the output format (default json)
@@ -76,25 +76,25 @@ Options:
   -compact						Print a machine-friendly version of the output
  ```
 
-### `$ cook recipe validate --help`
+### `validate`
 
 ```
 Usage: cook recipe validate FILE...
 
-Validate the cooklang syntax of one or more cooklang recipe files
+Validate the CookLang syntax of one or more CookLang recipe files
 ```
 
-### `$ cook recipe prettify --help`
+### `prettify`
 
 ```
 Usage: cook recipe prettify FILE
 
-Edit the content of a cooklang recipe file for style consistency
+Edit the content of a CookLang recipe file for style consistency
 ```
 
 
 
-### `$ cook recipe image --help`
+### `image`
 
 ```
 Usage cook recipe image FILE
@@ -102,12 +102,12 @@ Usage cook recipe image FILE
 Download a random image from upsplash.com to match a recipe title
 ```
 
-## `$ cook shopping-list --help`
+## `shopping-list`
 
 ```
 Usage: cook shopping-list [OPTIONS] FILE...
 
-Generate a shopping list from the given cooklang recipe file(s)
+Generate a shopping list from the given CookLang recipe file(s)
 
 Options:
   -output-format={json|yaml}	Specify the output format of the shopping list file (default json)
@@ -116,15 +116,15 @@ Options:
 ```
 
 
-## `$ cook fetch --help`
+## `fetch`
 
 ```
 Usage: cook fetch RECIPE [FILE]
 
-Pull a recipe (as a subdirectory of https://github.com/cooklang/recipes/), optionally as a specified file name
+Pull a recipe (as a subdirectory of https://github.com/CookLang/recipes/), optionally as a specified file name
 ```
 
-## `$ cook server --help`
+## `server`
 
 ```
 Usage: cook server [OPTIONS]
@@ -136,7 +136,7 @@ Options:
   -bind		Set the IP to which the server should bind (default 127.0.0.1)
 ```
 
-## `$ cook version --help`
+## `version`
 
 ```
 Usage: cook version
@@ -146,4 +146,4 @@ Show the version information for CookCLI
 
 # Questions and Issues
 
-If you have a question about CookCLI that isn't answered here, open an issue on the [cooklang/CookCLI GitHub repository](https://github.com/cooklang/CookCLI).
+If you have a question about CookCLI that isn't answered here, open an issue on the [CookLang/CookCLI GitHub repository](https://github.com/CookLang/CookCLI).
