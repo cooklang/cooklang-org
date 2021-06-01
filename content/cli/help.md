@@ -11,16 +11,16 @@ This documentation is a work in progress.
 Table of Contents
 =================
 
-* [cook](#cook)
-   * [recipe](#recipe)
-      * [read](#read)
-      * [validate](#validate)
-      * [prettify](#prettify)
-      * [image](#image)
-   * [shopping-list](#shopping-list)
-   * [fetch](#fetch)
-   * [server](#server)
-   * [version](#version)
+* [`cook`](#cook)
+   * [`recipe`](#recipe)
+      * [`read`](#read)
+      * [`validate`](#validate)
+      * [`prettify`](#prettify)
+      * [`image`](#image)
+   * [`shopping-list`](#shopping-list)
+   * [`fetch`](#fetch)
+   * [`server`](#server)
+   * [`version`](#version)
 * [Questions and Issues](#questions-and-issues)
 
 
