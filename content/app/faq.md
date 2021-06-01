@@ -10,7 +10,7 @@ summary: The questions we're pretty sure you want to know the answers to.
 
 {{< detail-tag
     "How do I create a new recipe?"
-    "A recipe is just a text file using the Cooklang markup language and the .cook file extension. To create a new recipe, just open a text editor and write out the steps! For details on how to use the Cooklang markup language, see the [Cooklang github specification page](https://github.com/Cooklang/spec)."
+    "A recipe is just a text file using the CookLang markup language and the .cook file extension. To create a new recipe, just open a text editor and write out the steps! For details on how to use the CookLang markup language, see the [CookLang github specification page](https://github.com/Cooklang/spec)."
 >}}
 
 {{< detail-tag
@@ -46,7 +46,7 @@ You can also add images for specific steps by including a step number before the
 >}}
 
 {{< detail-tag
-    "How do I enable Cooklang syntax highlighting in my text editor?"
+    "How do I enable CookLang syntax highlighting in my text editor?"
     "We have instructions for that on our [Docs page](/docs/syntax-highlighting/)."
 >}}
 
@@ -89,7 +89,7 @@ You can also add images for specific steps by including a step number before the
 
 {{< detail-tag
     "Can I export a shopping list to another app or format?"
-    "In the Cook app, it is possible to export a shopping list as an email. Using the Cook command line tool, it is possible to export to other data formats (such as Json)."
+    "In CookApp, it is possible to export a shopping list as an email. Using the CookCLI command line tool, it is possible to export to other data formats (such as Json)."
 >}}
 
 {{< detail-tag

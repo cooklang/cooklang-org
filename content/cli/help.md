@@ -111,8 +111,8 @@ Generate a shopping list from the given cooklang recipe file(s)
 
 Options:
   -output-format={json|yaml}	Specify the output format of the shopping list file (default json)
-  -only-ingredients				???
-  -compact						???
+  -only-ingredients				    Output only ingredient names (excludes quantities)
+  -compact						        Output in a machine-friendly format
 ```
 
 

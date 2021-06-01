@@ -3,7 +3,7 @@ title: 'Cooklang Specification'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 1
-summary: This is the specification and reference for writing a recipe in Cooklang.
+summary: This is the specification and reference for writing a recipe in CookLang.
 ---
 
 * [The .cook Recipe Specification](#the-cook-recipe-specification)
@@ -17,7 +17,7 @@ summary: This is the specification and reference for writing a recipe in Cooklan
 * [The Shopping List Specification](#the-shopping-list-specification)
 
 ## The .cook Recipe Specification
-Below is the specification for defining a recipe in Cooklang.
+Below is the specification for defining a recipe in CookLang.
 
 ### Ingredients
 
@@ -45,7 +45,7 @@ Top with @green onions{1%tbsp}(finely chopped)
 ```
 
 ### Comments
-You can add comments to Cooklang text with `//`.
+You can add comments to CookLang text with `//`.
 ```
 // Don't burn the roux!
 
@@ -114,7 +114,7 @@ Chicken French.3.jpg
 ```
 
 ## The Shopping List Specification
-To support the creation of shopping lists by apps and the command line tool, Cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
+To support the creation of shopping lists by apps and the command line tool, CookLang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
 You can use `[]` to define a category name. These names are arbitrary, so you can customize them to meet your needs. For example, each category could be an aisle or section of the store, such as `[produce]` and `[deli]`.
 ```
 [produce]
