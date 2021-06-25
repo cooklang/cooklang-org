@@ -16,21 +16,8 @@ Binary download:
 
 ## macOS
 
-Package manager
-
-```
-brew tap Cooklang/tap
-brew install Cooklang/tap/cli
-```
-
 Binary download:
 
 {{< cta-button "Download 64-bit" "TODO" >}}
 
 {{< cta-button "Download 32-bit" "TODO" >}}
-
-## Windows
-
-Binary download:
-
-{{< cta-button "Download 64-bit" "TODO" >}}
