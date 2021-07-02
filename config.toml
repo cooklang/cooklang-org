@@ -57,5 +57,5 @@ summaryLength = 30
     meta_twitter_creator = "@Cooklang"
 
   [params.logo]
-      mobile = "/images/logo-mobile.svg"
+      mobile = "/images/logo.svg"
       standard  = "/images/logo.svg"

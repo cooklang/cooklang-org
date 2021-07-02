@@ -1,0 +1,17 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+<div class="strip">
+  <div class="container pt-4 pb-16">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-9">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

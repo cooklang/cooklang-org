@@ -31,6 +31,9 @@
     {{ if eq $.Section . }}
     {{ $displaySidebar = true }}
     {{ end }}
+    {{ if $.Params.blank }}
+    {{ $displaySidebar = false }}
+    {{ end }}
     {{ end }}
 
     {{ if $displaySidebar }}
