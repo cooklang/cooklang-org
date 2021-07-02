@@ -18,4 +18,4 @@ Features:
 - Create meal plans for each week, and then generate a shopping list.
 - Export shopping lists to email.
 
-If you would like to sign-up to join our beta test, send us an email: cook@example.com
+If you would like to sign-up to join our beta test, send us an email: {{< email >}}

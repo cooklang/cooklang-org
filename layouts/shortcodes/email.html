@@ -1,0 +1,12 @@
+<a class="decode" href="" data-encoded="aGVsbG9AY29va2xhbmcub3Jn"></a>
+
+<script>
+    setTimeout(() => {
+        document.querySelectorAll(".decode").forEach((e) => {
+            var value = atob(e.dataset.encoded);
+            e.text = value;
+            e.href = "ma" + "ilto: " + value;
+        });
+    }, 4242);
+</script>
+
