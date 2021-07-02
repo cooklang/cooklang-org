@@ -12,7 +12,7 @@ blank: true
 
 {{< detail-tag
     "How do I create a new recipe?"
-    "A recipe is just a text file using the CookLang markup language and the .cook file extension. To create a new recipe, just open a text editor and write out the steps! For details on how to use the CookLang markup language, see the [CookLang github specification page](https://github.com/Cooklang/spec)."
+    "A recipe is just a text file using the CookLang markup language and the .cook file extension. To create a new recipe, just open a text editor and write out the steps! For details on how to use the CookLang markup language, see the [CookLang github specification page](/docs/spec/)."
 >}}
 
 {{< detail-tag
@@ -54,7 +54,7 @@ You can also add images for specific steps by including a step number before the
 
 {{< detail-tag
     "How do I add community-made recipes?"
-    "When you first install the app, you will be given the option to import a few sample recipes. If you would like to add more, check out our [Community page](https://cooklang.org/cli/help/community/) or go directly to our [Community recipes GitHub repository](https://github.com/Cooklang/recipes)."
+    "When you first install the app, you will be given the option to import a few sample recipes. If you would like to add more, check out our [Community page](/cli/help/#fetch) or go directly to our [Community recipes GitHub repository](https://github.com/Cooklang/recipes)."
 >}}
 
 {{< detail-tag
