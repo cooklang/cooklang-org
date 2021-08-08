@@ -1,9 +1,145 @@
-<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.84.4"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Cook: recipe markup language</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Cook is a markup language for recipes."><meta property="og:title" content="Cook – Recipe Markup Language"><meta property="og:type" content="website"><meta property="og:url" content="https://Cooklang.org"><meta property="og:image" content="https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"><meta property="og:description" content="Cook is a markup language for recipes."><meta name=twitter:card content="summary"><meta name=twitter:site content="@Cooklang"><meta name=twitter:creator content="@Cooklang"><link rel=icon href=/favicon.png><link rel=stylesheet href=/css/style.min.6b810f933e568f3ba607b4f5b1cf85fec6ca57b9c291b318c80724d874a7abf3.css></head><body class="page page-home"><div id=main-menu-mobile class=main-menu-mobile><ul><li class="menu-item-home active"><a href=/><span>Home</span></a></li><li class=menu-item-docs><a href=/docs/><span>Docs</span></a></li><li class=menu-item-cli><a href=/cli/><span>CLI</span></a></li><li class="menu-item-ios app"><a href=/app/><span>iOS app</span></a></li></ul></div><div class=wrapper><div class=header><div class=container><div class=logo><a href=/><img alt=Logo src=/images/logo.svg></a></div><div class=logo-mobile><a href=/><img alt=Logo src=/images/logo.svg></a></div><div id=main-menu class=main-menu><ul><li class="menu-item-home active"><a href=/><span>Home</span></a></li><li class=menu-item-docs><a href=/docs/><span>Docs</span></a></li><li class=menu-item-cli><a href=/cli/><span>CLI</span></a></li><li class="menu-item-ios app"><a href=/app/><span>iOS app</span></a></li></ul></div><button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
-<span class=hamburger-box><span class=hamburger-inner></span></span></button></div></div><div class=strip><div class="container pt-4 pb-16"><div class=row><div class=col-12><h1 class=title>CookLang – Recipe Markup Language</h1><div class=content><p>CookLang is a markup language at the center of our open-source ecosystem for cooking and recipe management.</p><p>CookLang and the tools we&rsquo;ve built to use it, you can:</p><ul><li>simplify your personal recipe management;</li><li>streamline your shopping routine;</li><li>make cooking more fun.</li></ul><p>Here&rsquo;s how the CookLang ecosystem makes that happen:</p><ul><li>All recipes are human-readable text files.</li><li>Everything is a file. No databases. And you have complete control over your information.</li><li>All the tools are simple, focused, and efficient; the UNIX way.</li></ul><h2 id=getting-started>Getting Started</h2><p><strong>Create a recipe file</strong>, where each line is a step in the recipe. Tag your ingredients with @ and {}, then save your file. For a complete reference on CookLang, see the <a href=/docs/spec>language specification page</a>.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Then add @salt and @ground black pepper{} to taste.
+<!doctype html><html lang=en>
+<head>
+<meta name=generator content="Hugo 0.87.0">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Cook: recipe markup language</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Cook is a markup language for recipes.">
+<meta property="og:title" content="Cook – Recipe Markup Language">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://Cooklang.org">
+<meta property="og:image" content="https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png">
+<meta property="og:description" content="Cook is a markup language for recipes.">
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content="@Cooklang">
+<meta name=twitter:creator content="@Cooklang">
+<link rel=icon href=/favicon.png>
+<link rel=stylesheet href=/css/style.min.6b810f933e568f3ba607b4f5b1cf85fec6ca57b9c291b318c80724d874a7abf3.css>
+</head>
+<body class="page page-home">
+<div id=main-menu-mobile class=main-menu-mobile>
+<ul>
+<li class=menu-item-home>
+<a href=/>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=/docs/>
+<span>Docs</span>
+</a>
+</li>
+<li class=menu-item-cli>
+<a href=/cli/>
+<span>CLI</span>
+</a>
+</li>
+<li class="menu-item-ios app">
+<a href=/app/>
+<span>iOS app</span>
+</a>
+</li>
+</ul>
+</div>
+<div class=wrapper>
+<div class=header>
+<div class=container>
+<div class=logo>
+<a href=/><img alt=Logo src=/images/logo.svg></a>
+</div>
+<div class=logo-mobile>
+<a href=/><img alt=Logo src=/images/logo.svg></a>
+</div>
+<div id=main-menu class=main-menu>
+<ul>
+<li class=menu-item-home>
+<a href=/>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=/docs/>
+<span>Docs</span>
+</a>
+</li>
+<li class=menu-item-cli>
+<a href=/cli/>
+<span>CLI</span>
+</a>
+</li>
+<li class="menu-item-ios app">
+<a href=/app/>
+<span>iOS app</span>
+</a>
+</li>
+</ul>
+</div>
+<button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
+<span class=hamburger-box>
+<span class=hamburger-inner></span>
+</span>
+</button>
+</div>
+</div>
+<div class=strip>
+<div class="container pt-4 pb-16">
+<div class=row>
+<div class=col-12>
+<h1 class=title>CookLang – Recipe Markup Language</h1>
+<div class=content>
+<p>CookLang is a markup language at the center of our open-source ecosystem for cooking and recipe management.</p>
+<p>CookLang and the tools we&rsquo;ve built to use it, you can:</p>
+<ul>
+<li>simplify your personal recipe management;</li>
+<li>streamline your shopping routine;</li>
+<li>make cooking more fun.</li>
+</ul>
+<p>Here&rsquo;s how the CookLang ecosystem makes that happen:</p>
+<ul>
+<li>All recipes are human-readable text files.</li>
+<li>Everything is a file. No databases. And you have complete control over your information.</li>
+<li>All the tools are simple, focused, and efficient; the UNIX way.</li>
+</ul>
+<h2 id=getting-started>Getting Started</h2>
+<p><strong>Create a recipe file</strong>, where each line is a step in the recipe. Tag your ingredients with @ and {}, then save your file. For a complete reference on CookLang, see the <a href=/docs/spec>language specification page</a>.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Then add @salt and @ground black pepper{} to taste.
 
 Poke holes in @potato{2}.
 
 Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
-</code></pre></div><p><strong>Install a recipe viewer.</strong> We support a few tools for viewing CookLang recipes:</p><ul><li><a href=/app/>The iOS app for iPad and iPhone</a> allows you to read your recipe files directly from iCloud.</li><li><a href=/cli/>The CookCLI program for Mac and Linux</a> provides a webserver for presenting your recipes, viewable with any web browser.</li></ul><p><strong>Cook something!</strong> Open a recipe on your viewer of choice, whip out the ingredients, and make something tasty.</p><h2 id=cookcli>CookCLI</h2><p>The <a href=/cli/>Cook CLI</a> command line program provides a suite of tools to create shopping lists and maintain recipes. We&rsquo;ve built it to be simple and useful for automating your cooking and shopping routine with existing UNIX command line and scripting tools. It can also function as a webserver for your recipes, making them browsable on any device with a web browser.</p><h2 id=ios-app>iOS app</h2><p>We created the <a href=/app/>iOS app</a> to assist you while cooking, shopping, and meal planning. Simply connect the app to your iCloud, open a recipe, and start cooking.</p><p><img src=/app/recipes.png alt=Recipes>
+</code></pre></div><p><strong>Install a recipe viewer.</strong> We support a few tools for viewing CookLang recipes:</p>
+<ul>
+<li><a href=/app/>The iOS app for iPad and iPhone</a> allows you to read your recipe files directly from iCloud.</li>
+<li><a href=/cli/>The CookCLI program for Mac and Linux</a> provides a webserver for presenting your recipes, viewable with any web browser.</li>
+</ul>
+<p><strong>Cook something!</strong> Open a recipe on your viewer of choice, whip out the ingredients, and make something tasty.</p>
+<h2 id=cookcli>CookCLI</h2>
+<p>The <a href=/cli/>Cook CLI</a> command line program provides a suite of tools to create shopping lists and maintain recipes. We&rsquo;ve built it to be simple and useful for automating your cooking and shopping routine with existing UNIX command line and scripting tools. It can also function as a webserver for your recipes, making them browsable on any device with a web browser.</p>
+<h2 id=ios-app>iOS app</h2>
+<p>We created the <a href=/app/>iOS app</a> to assist you while cooking, shopping, and meal planning. Simply connect the app to your iCloud, open a recipe, and start cooking.</p>
+<p><img src=/app/recipes.png alt=Recipes>
 <img src=/app/recipe-ingredients.png alt=Recipe>
-<img src=/app/shopping-list.png alt="Shopping list"></p></div></div></div></div></div></div><div class=sub-footer><div class=container><div class=row><div class=col-12><div class=sub-footer-inner><ul><li class=credits><a href=https://Cooklang.org>www.Cooklang.org</a></li></ul></div></div></div></div></div><script type=text/javascript src=/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js></script></body></html>
+<img src=/app/shopping-list.png alt="Shopping list"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=sub-footer>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class=sub-footer-inner>
+<ul>
+<li class=credits><a href=https://Cooklang.org>www.Cooklang.org</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type=text/javascript src=/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js></script>
+</body>
+</html>

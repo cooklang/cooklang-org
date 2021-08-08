@@ -1,5 +1,120 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Using CookCLI - Cook: recipe markup language</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.png><link rel=stylesheet href=/css/style.min.6b810f933e568f3ba607b4f5b1cf85fec6ca57b9c291b318c80724d874a7abf3.css></head><body class="page page-default-single"><div id=main-menu-mobile class=main-menu-mobile><ul><li class=menu-item-home><a href=/><span>Home</span></a></li><li class=menu-item-docs><a href=/docs/><span>Docs</span></a></li><li class=menu-item-cli><a href=/cli/><span>CLI</span></a></li><li class="menu-item-ios app"><a href=/app/><span>iOS app</span></a></li></ul></div><div class=wrapper><div class=header><div class=container><div class=logo><a href=/><img alt=Logo src=/images/logo.svg></a></div><div class=logo-mobile><a href=/><img alt=Logo src=/images/logo.svg></a></div><div id=main-menu class=main-menu><ul><li class=menu-item-home><a href=/><span>Home</span></a></li><li class=menu-item-docs><a href=/docs/><span>Docs</span></a></li><li class="menu-item-cli active"><a href=/cli/><span>CLI</span></a></li><li class="menu-item-ios app"><a href=/app/><span>iOS app</span></a></li></ul></div><button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
-<span class=hamburger-box><span class=hamburger-inner></span></span></button></div></div><div class="container pt-2 pt-md-6 pb-3 pb-md-6"><div class=row><div class="col-12 col-md-3 mb-3"><div class=sidebar><div class=docs-menu><h4>CLI</h4><ul><li class=active><a href=/cli/help/>Using CookCLI</a></li><li><a href=/cli/download/>Download CookCLI</a></li></ul></div></div></div><div class="col-12 col-md-9"><h1 class=title>Using CookCLI</h1><div class=content><p>This documentation is a work in progress.</p><h1 id=table-of-contents>Table of Contents</h1><ul><li><a href=#cook><code>cook</code></a><ul><li><a href=#recipe><code>recipe</code></a><ul><li><a href=#read><code>read</code></a></li><li><a href=#validate><code>validate</code></a></li><li><a href=#prettify><code>prettify</code></a></li><li><a href=#image><code>image</code></a></li></ul></li><li><a href=#shopping-list><code>shopping-list</code></a></li><li><a href=#fetch><code>fetch</code></a></li><li><a href=#server><code>server</code></a></li><li><a href=#version><code>version</code></a></li></ul></li><li><a href=#questions-and-issues>Questions and Issues</a></li></ul><h1 id=cook><code>cook</code></h1><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook [OPTIONS] COMMAND
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Using CookCLI - Cook: recipe markup language</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=icon href=/favicon.png>
+<link rel=stylesheet href=/css/style.min.6b810f933e568f3ba607b4f5b1cf85fec6ca57b9c291b318c80724d874a7abf3.css>
+</head>
+<body class="page page-default-single">
+<div id=main-menu-mobile class=main-menu-mobile>
+<ul>
+<li class=menu-item-home>
+<a href=/>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=/docs/>
+<span>Docs</span>
+</a>
+</li>
+<li class=menu-item-cli>
+<a href=/cli/>
+<span>CLI</span>
+</a>
+</li>
+<li class="menu-item-ios app">
+<a href=/app/>
+<span>iOS app</span>
+</a>
+</li>
+</ul>
+</div>
+<div class=wrapper>
+<div class=header>
+<div class=container>
+<div class=logo>
+<a href=/><img alt=Logo src=/images/logo.svg></a>
+</div>
+<div class=logo-mobile>
+<a href=/><img alt=Logo src=/images/logo.svg></a>
+</div>
+<div id=main-menu class=main-menu>
+<ul>
+<li class=menu-item-home>
+<a href=/>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=/docs/>
+<span>Docs</span>
+</a>
+</li>
+<li class="menu-item-cli active">
+<a href=/cli/>
+<span>CLI</span>
+</a>
+</li>
+<li class="menu-item-ios app">
+<a href=/app/>
+<span>iOS app</span>
+</a>
+</li>
+</ul>
+</div>
+<button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
+<span class=hamburger-box>
+<span class=hamburger-inner></span>
+</span>
+</button>
+</div>
+</div>
+<div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+<div class=row>
+<div class="col-12 col-md-3 mb-3">
+<div class=sidebar>
+<div class=docs-menu>
+<h4>CLI</h4>
+<ul>
+<li class=active>
+<a href=/cli/help/>Using CookCLI</a>
+</li>
+<li>
+<a href=/cli/download/>Download CookCLI</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-9">
+<h1 class=title>Using CookCLI</h1>
+<div class=content>
+<p>This documentation is a work in progress.</p>
+<h1 id=table-of-contents>Table of Contents</h1>
+<ul>
+<li><a href=#cook><code>cook</code></a>
+<ul>
+<li><a href=#recipe><code>recipe</code></a>
+<ul>
+<li><a href=#read><code>read</code></a></li>
+<li><a href=#validate><code>validate</code></a></li>
+<li><a href=#prettify><code>prettify</code></a></li>
+<li><a href=#image><code>image</code></a></li>
+</ul>
+</li>
+<li><a href=#shopping-list><code>shopping-list</code></a></li>
+<li><a href=#fetch><code>fetch</code></a></li>
+<li><a href=#server><code>server</code></a></li>
+<li><a href=#version><code>version</code></a></li>
+</ul>
+</li>
+<li><a href=#questions-and-issues>Questions and Issues</a></li>
+</ul>
+<h1 id=cook><code>cook</code></h1>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook [OPTIONS] COMMAND
 
 A toolkit for command-line interaction with CookLang text files
 
@@ -16,7 +131,8 @@ Commands:
   version			     Show the CookCLI version information
 
 Run `cook COMMAND --help` for more information on a command.
-</code></pre></div><h2 id=recipe><code>recipe</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe COMMAND
+</code></pre></div><h2 id=recipe><code>recipe</code></h2>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe COMMAND
 
 Read and edit CookLang recipe files
 
@@ -27,7 +143,8 @@ prettify	Edit a CookLang recipe file for style consistency
 image		  Download a random image from upsplash.com to match the recipe title
 
 Run `cook recipe COMMAND --help` for more information on a command.
-</code></pre></div><h3 id=read><code>read</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe read [OPTIONS] FILE
+</code></pre></div><h3 id=read><code>read</code></h3>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe read [OPTIONS] FILE
 
 Parse and print a CookLang recipe file
 
@@ -36,16 +153,20 @@ Options:
   -only-ingredients				Print only the ingredients section of the output
   -only-steps					Print only the steps section of the output
   -compact						Print a machine-friendly version of the output
-</code></pre></div><h3 id=validate><code>validate</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe validate FILE...
+</code></pre></div><h3 id=validate><code>validate</code></h3>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe validate FILE...
 
 Validate the CookLang syntax of one or more CookLang recipe files
-</code></pre></div><h3 id=prettify><code>prettify</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe prettify FILE
+</code></pre></div><h3 id=prettify><code>prettify</code></h3>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook recipe prettify FILE
 
 Edit the content of a CookLang recipe file for style consistency
-</code></pre></div><h3 id=image><code>image</code></h3><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage cook recipe image FILE
+</code></pre></div><h3 id=image><code>image</code></h3>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage cook recipe image FILE
 
 Download a random image from upsplash.com to match a recipe title
-</code></pre></div><h2 id=shopping-list><code>shopping-list</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook shopping-list [OPTIONS] FILE...
+</code></pre></div><h2 id=shopping-list><code>shopping-list</code></h2>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook shopping-list [OPTIONS] FILE...
 
 Generate a shopping list from the given CookLang recipe file(s)
 
@@ -53,17 +174,43 @@ Options:
   -output-format={json|yaml}	Specify the output format of the shopping list file (default json)
   -only-ingredients				    Output only ingredient names (excludes quantities)
   -compact						        Output in a machine-friendly format
-</code></pre></div><h2 id=fetch><code>fetch</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook fetch RECIPE [FILE]
+</code></pre></div><h2 id=fetch><code>fetch</code></h2>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook fetch RECIPE [FILE]
 
 Pull a recipe (as a subdirectory of https://github.com/CookLang/recipes/), optionally as a specified file name
-</code></pre></div><h2 id=server><code>server</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook server [OPTIONS]
+</code></pre></div><h2 id=server><code>server</code></h2>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook server [OPTIONS]
 
 Run a webserver to serve your recipes on the web
 
 Options:
   -port		Set the port on which the webserver should listen (default 8080)
   -bind		Set the IP to which the server should bind (default 127.0.0.1)
-</code></pre></div><h2 id=version><code>version</code></h2><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Usage: cook version
+</code></pre></div><h2 id=version><code>version</code></h2>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Usage: cook version
 
 Show the version information for CookCLI
-</code></pre></div><h1 id=questions-and-issues>Questions and Issues</h1><p>If you have a question about CookCLI that isn&rsquo;t answered here, open an issue on the <a href=https://github.com/CookLang/CookCLI>CookLang/CookCLI GitHub repository</a>.</p></div></div></div></div></div></div><div class=sub-footer><div class=container><div class=row><div class=col-12><div class=sub-footer-inner><ul><li class=credits><a href=https://Cooklang.org>www.Cooklang.org</a></li></ul></div></div></div></div></div><script type=text/javascript src=/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js></script></body></html>
+</code></pre></div><h1 id=questions-and-issues>Questions and Issues</h1>
+<p>If you have a question about CookCLI that isn&rsquo;t answered here, open an issue on the <a href=https://github.com/CookLang/CookCLI>CookLang/CookCLI GitHub repository</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=sub-footer>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class=sub-footer-inner>
+<ul>
+<li class=credits><a href=https://Cooklang.org>www.Cooklang.org</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type=text/javascript src=/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js></script>
+</body>
+</html>
