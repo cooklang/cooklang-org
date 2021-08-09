@@ -20,6 +20,7 @@ Table of Contents
    * [`shopping-list`](#shopping-list)
    * [`fetch`](#fetch)
    * [`server`](#server)
+   * [`seed`](#seed)
    * [`version`](#version)
 * [Questions and Issues](#questions-and-issues)
 
@@ -27,56 +28,71 @@ Table of Contents
 # `cook` 
 
 ```
-Usage: cook [OPTIONS] COMMAND
+OVERVIEW: A toolkit for command-line interaction with CookLang text files.
+Documentation can be found at https://cooklang.org/cli/help/ and issues reported at https://github.com/CookLang/CookCLI.
 
-A toolkit for command-line interaction with CookLang text files
+USAGE: cook [--units <units>] [--inflection <inflection>] <subcommand>
 
-Options:
-  -aisle        Specify an aisle.conf file to override shopping list default settings
-  -units        Specify a units.conf file to override units default settings
-  -inflection   Specify an inflection.conf file to override default inflection settings
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -h, --help              Show help information.
 
-Commands:
-  recipe	     	   Manage recipes and recipe files
-  shopping-list	   Create a shopping list
-  fetch 			     Pull recipes from the community recipe repository
-  server			     Run a webserver to serve your recipes on the web
-  version			     Show the CookCLI version information
+SUBCOMMANDS:
+  recipe                  Manage recipes and recipe files
+  shopping-list           Create a shopping list
+  server                  Run a webserver to serve your recipes on the web
+  fetch                   Pull recipes from the community recipe repository
+  seed                    Populate directory with seed recipes
+  version                 Show the CookCLI version information
 
-Run `cook COMMAND --help` for more information on a command.
+  See 'cook help <subcommand>' for detailed help.
 ```
 
 ## `recipe`
 
 ```
-Usage: cook recipe COMMAND
+OVERVIEW: Manage recipes and recipe files
 
-Read and edit CookLang recipe files
+USAGE: cook recipe <subcommand>
 
-Commands:
-read 		  Parse and print a CookLang recipe file
-validate	Check for syntax errors in one or more CookLang recipe files
-prettify	Edit a CookLang recipe file for style consistency
-image		  Download a random image from upsplash.com to match the recipe title
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -h, --help              Show help information.
 
-Run `cook recipe COMMAND --help` for more information on a command.
+SUBCOMMANDS:
+  read                    Parse and print a CookLang recipe file
+  validate                Check for syntax errors in one or more CookLang recipe files (TODO)
+  prettify                Edit a CookLang recipe file for style consistency (TODO)
+  image                   Download a random image from upsplash.com to match the recipe title
+
+  See 'cook help recipe <subcommand>' for detailed help.
 ```
 
 ### `read`
 
 ```
-Usage: cook recipe read [OPTIONS] FILE
+OVERVIEW: Parse and print a CookLang recipe file
 
-Parse and print a CookLang recipe file
+USAGE: cook recipe read [<recipe-file>] [--output-format <output-format>] [--only-ingredients]
 
-Options:
-  -output-format={json|yaml}	Set the output format (default json)
-  -only-ingredients				Print only the ingredients section of the output
-  -only-steps					Print only the steps section of the output
-  -compact						Print a machine-friendly version of the output
+ARGUMENTS:
+  <recipe-file>           A .cook file or STDIN
+
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  --output-format <output-format>
+                          Set the output format to json or yaml (default: text)
+  --only-ingredients      Print only the ingredients section of the output
+  -h, --help              Show help information.
  ```
 
-### `validate`
+<!-- ### `validate`
 
 ```
 Usage: cook recipe validate FILE...
@@ -91,57 +107,124 @@ Usage: cook recipe prettify FILE
 
 Edit the content of a CookLang recipe file for style consistency
 ```
-
+ -->
 
 
 ### `image`
 
 ```
-Usage cook recipe image FILE
+OVERVIEW: Download a random image from upsplash.com to match the recipe title
 
-Download a random image from upsplash.com to match a recipe title
+USAGE: cook recipe image <file>
+
+ARGUMENTS:
+  <file>                  A .cook file or STDIN
+
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -h, --help              Show help information.
 ```
 
 ## `shopping-list`
 
 ```
-Usage: cook shopping-list [OPTIONS] FILE...
+OVERVIEW: Create a shopping list
 
-Generate a shopping list from the given CookLang recipe file(s)
+USAGE: cook shopping-list [--aisle <aisle>] [--inflection <inflection>] [<files-or-directory> ...] [--output-format <output-format>] [--only-ingredients]
 
-Options:
-  -output-format={json|yaml}	Specify the output format of the shopping list file (default json)
-  -only-ingredients				    Output only ingredient names (excludes quantities)
-  -compact						        Output in a machine-friendly format
+ARGUMENTS:
+  <files-or-directory>    File or directory with .cook files to include to shopping list
+
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -a, --aisle <aisle>     Specify an aisle.conf file to set grouping. Cook automatically checks current directory in ./config/aisle.conf and
+                          $HOME/.config/cook/aisle.conf
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to define rules of pluralisation. Cook automatically checks current directory in
+                          ./config/inflection.conf and $HOME/.config/cook/inflection.conf
+  --output-format <output-format>
+                          Set the output format to json or yaml (default: text)
+  --only-ingredients      Print only the ingredients section of the output
+  -h, --help              Show help information.
 ```
 
 
 ## `fetch`
 
 ```
-Usage: cook fetch RECIPE [FILE]
+OVERVIEW: Pull recipes from the community recipe repository
 
-Pull a recipe (as a subdirectory of https://github.com/CookLang/recipes/), optionally as a specified file name
+USAGE: cook fetch [<community-recipe-path>]
+
+ARGUMENTS:
+  <community-recipe-path> Path
+
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -h, --help              Show help information.
+
+
 ```
 
 ## `server`
 
 ```
-Usage: cook server [OPTIONS]
+OVERVIEW: Run a webserver to serve your recipes on the web
 
-Run a webserver to serve your recipes on the web
+USAGE: cook server [--aisle <aisle>] [--inflection <inflection>] [--port <port>] [--bind <bind>] [<root>]
 
-Options:
-  -port		Set the port on which the webserver should listen (default 8080)
-  -bind		Set the IP to which the server should bind (default 127.0.0.1)
+ARGUMENTS:
+  <root>                  A path to serve cook files from
+
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -a, --aisle <aisle>     Specify an aisle.conf file to set grouping. Cook automatically checks current directory in ./config/aisle.conf and
+                          $HOME/.config/cook/aisle.conf
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to define rules of pluralisation. Cook automatically checks current directory in
+                          ./config/inflection.conf and $HOME/.config/cook/inflection.conf
+  -p, --port <port>       Set the port on which the webserver should listen (default: 9080)
+  -b, --bind <bind>       Set the IP to which the server should bind (default: 127.0.0.1)
+  -h, --help              Show help information.
+```
+
+## `seed`
+
+```
+OVERVIEW: Populate directory with seed recipes
+
+USAGE: cook seed [<seed-directory-path>]
+
+ARGUMENTS:
+  <seed-directory-path>   Path
+
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -h, --help              Show help information.
 ```
 
 ## `version`
 
 ```
-Usage: cook version
+OVERVIEW: Show the CookCLI version information
 
-Show the version information for CookCLI
+USAGE: cook version
+
+OPTIONS:
+  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
+  -i, --inflection <inflection>
+                          Specify an inflection.conf file to override default inflection settings (TODO)
+  -h, --help              Show help information.
 ```
 
 # Questions and Issues
