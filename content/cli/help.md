@@ -31,12 +31,9 @@ Table of Contents
 OVERVIEW: A toolkit for command-line interaction with CookLang text files.
 Documentation can be found at https://cooklang.org/cli/help/ and issues reported at https://github.com/CookLang/CookCLI.
 
-USAGE: cook [--units <units>] [--inflection <inflection>] <subcommand>
+USAGE: cook <subcommand>
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 
 SUBCOMMANDS:
@@ -58,9 +55,6 @@ OVERVIEW: Manage recipes and recipe files
 USAGE: cook recipe <subcommand>
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 
 SUBCOMMANDS:
@@ -83,9 +77,6 @@ ARGUMENTS:
   <recipe-file>           A .cook file or STDIN
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   --output-format <output-format>
                           Set the output format to json or yaml (default: text)
   --only-ingredients      Print only the ingredients section of the output
@@ -121,9 +112,6 @@ ARGUMENTS:
   <file>                  A .cook file or STDIN
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 ```
 
@@ -138,9 +126,6 @@ ARGUMENTS:
   <files-or-directory>    File or directory with .cook files to include to shopping list
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -a, --aisle <aisle>     Specify an aisle.conf file to set grouping. Cook automatically checks current directory in ./config/aisle.conf and
                           $HOME/.config/cook/aisle.conf
   -i, --inflection <inflection>
@@ -164,12 +149,7 @@ ARGUMENTS:
   <community-recipe-path> Path
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
-
-
 ```
 
 ## `server`
@@ -183,9 +163,6 @@ ARGUMENTS:
   <root>                  A path to serve cook files from
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -a, --aisle <aisle>     Specify an aisle.conf file to set grouping. Cook automatically checks current directory in ./config/aisle.conf and
                           $HOME/.config/cook/aisle.conf
   -i, --inflection <inflection>
@@ -207,9 +184,6 @@ ARGUMENTS:
   <seed-directory-path>   Path
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 ```
 
@@ -221,9 +195,6 @@ OVERVIEW: Show the CookCLI version information
 USAGE: cook version
 
 OPTIONS:
-  -u, --units <units>     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection <inflection>
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 ```
 
