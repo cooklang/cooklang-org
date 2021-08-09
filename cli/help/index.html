@@ -118,12 +118,9 @@
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>OVERVIEW: A toolkit for command-line interaction with CookLang text files.
 Documentation can be found at https://cooklang.org/cli/help/ and issues reported at https://github.com/CookLang/CookCLI.
 
-USAGE: cook [--units &lt;units&gt;] [--inflection &lt;inflection&gt;] &lt;subcommand&gt;
+USAGE: cook &lt;subcommand&gt;
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 
 SUBCOMMANDS:
@@ -141,9 +138,6 @@ SUBCOMMANDS:
 USAGE: cook recipe &lt;subcommand&gt;
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 
 SUBCOMMANDS:
@@ -162,9 +156,6 @@ ARGUMENTS:
   &lt;recipe-file&gt;           A .cook file or STDIN
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   --output-format &lt;output-format&gt;
                           Set the output format to json or yaml (default: text)
   --only-ingredients      Print only the ingredients section of the output
@@ -179,9 +170,6 @@ ARGUMENTS:
   &lt;file&gt;                  A .cook file or STDIN
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 </code></pre></div><h2 id=shopping-list><code>shopping-list</code></h2>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>OVERVIEW: Create a shopping list
@@ -192,9 +180,6 @@ ARGUMENTS:
   &lt;files-or-directory&gt;    File or directory with .cook files to include to shopping list
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -a, --aisle &lt;aisle&gt;     Specify an aisle.conf file to set grouping. Cook automatically checks current directory in ./config/aisle.conf and
                           $HOME/.config/cook/aisle.conf
   -i, --inflection &lt;inflection&gt;
@@ -213,12 +198,7 @@ ARGUMENTS:
   &lt;community-recipe-path&gt; Path
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
-
-
 </code></pre></div><h2 id=server><code>server</code></h2>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>OVERVIEW: Run a webserver to serve your recipes on the web
 
@@ -228,9 +208,6 @@ ARGUMENTS:
   &lt;root&gt;                  A path to serve cook files from
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -a, --aisle &lt;aisle&gt;     Specify an aisle.conf file to set grouping. Cook automatically checks current directory in ./config/aisle.conf and
                           $HOME/.config/cook/aisle.conf
   -i, --inflection &lt;inflection&gt;
@@ -248,9 +225,6 @@ ARGUMENTS:
   &lt;seed-directory-path&gt;   Path
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 </code></pre></div><h2 id=version><code>version</code></h2>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>OVERVIEW: Show the CookCLI version information
@@ -258,9 +232,6 @@ OPTIONS:
 USAGE: cook version
 
 OPTIONS:
-  -u, --units &lt;units&gt;     Specify a units.conf file to override units default settings (TODO)
-  -i, --inflection &lt;inflection&gt;
-                          Specify an inflection.conf file to override default inflection settings (TODO)
   -h, --help              Show help information.
 </code></pre></div><h1 id=questions-and-issues>Questions and Issues</h1>
 <p>If you have a question about CookCLI that isn&rsquo;t answered here, open an issue on the <a href=https://github.com/CookLang/CookCLI>CookLang/CookCLI GitHub repository</a>.</p>
