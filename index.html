@@ -116,7 +116,15 @@ Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
 <p><strong>Cook something!</strong> Open a recipe on your viewer of choice, whip out the ingredients, and make something tasty.</p>
 <h2 id=cookcli>CookCLI</h2>
 <p>The <a href=/cli/>Cook CLI</a> command line program provides a suite of tools to create shopping lists and maintain recipes. We&rsquo;ve built it to be simple and useful for automating your cooking and shopping routine with existing UNIX command line and scripting tools. It can also function as a webserver for your recipes, making them browsable on any device with a web browser.</p>
-<h2 id=ios-app>iOS app</h2>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback># create sample recipes
+cook seed
+
+# check content of &#34;Neapolitan Pizza&#34; recipee
+cook recipe read &#34;Neapolitan Pizza.cook&#34;
+
+# create a shopping list for all sample recipes
+cook shopping-list .
+</code></pre></div><h2 id=ios-app>iOS app</h2>
 <p>We created the <a href=/app/>iOS app</a> to assist you while cooking, shopping, and meal planning. Simply connect the app to your iCloud, open a recipe, and start cooking.</p>
 <p><img src=/app/recipes.png alt=Recipes>
 <img src=/app/recipe-ingredients.png alt=Recipe>
