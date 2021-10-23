@@ -15,6 +15,7 @@ summary: This is the specification and reference for writing a recipe in CookLan
    * [Timer](#timer)
 * [Adding Pictures](#adding-pictures)
 * [The Shopping List Specification](#the-shopping-list-specification)
+* [Roadmap](#roadmap)
 
 ## The .cook Recipe Specification
 Below is the specification for defining a recipe in CookLang.
@@ -39,11 +40,6 @@ To use a unit of an item, such as weight or volume, add a `%` between the quanti
 Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
 ```
 
-To modify the ingredient any other way, use parentheses.
-```
-Top with @green onions{1%tbsp}(finely chopped)
-```
-
 ### Comments
 You can add comments to CookLang text with `//`.
 ```
@@ -59,32 +55,6 @@ You can add metadata tags to your recipe for information such as source (or auth
 >> source: https://www.gimmesomeoven.com/baked-potato/
 >> time required: 1.5 hours
 >> course: dinner
-```
-
-#### Servings
-You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
-The metadata tag defines the serving sizes the recipe supports.
-```
->> servings: 2|4|8
-```
-
-Then, you can automatically scale ingredient quantities with `*`. This will multiply the quantity given by the number of servings selected.
-```
->> servings: 2|4|8
-Add @milk{1/2*%cup} and mix until smooth.
-```
-Alternatively, you can manually specify ingredient quantities for each serving size. This is useful for non-linear scaling.
-```
->> servings: 2|4|8
-Add @milk{1|2|3%cup} and mix until smooth.
-```
-
-If no ingredient scaling is defined, the same quantity will be used for all serving sizes.
-
-```
->> servings: 2|4|8
-Add @salt{1%tsp} // this is the same
-Add @salt{1|1|1%tsp} // as this
 ```
 
 ### Cookware
@@ -149,4 +119,32 @@ chicken
 
 [canned goods]
 tuna|chicken of the sea
+```
+
+## Roadmap
+
+### Servings (proposal)
+You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
+The metadata tag defines the serving sizes the recipe supports.
+```
+>> servings: 2|4|8
+```
+
+Then, you can automatically scale ingredient quantities with `*`. This will multiply the quantity given by the number of servings selected.
+```
+>> servings: 2|4|8
+Add @milk{1/2*%cup} and mix until smooth.
+```
+Alternatively, you can manually specify ingredient quantities for each serving size. This is useful for non-linear scaling.
+```
+>> servings: 2|4|8
+Add @milk{1|2|3%cup} and mix until smooth.
+```
+
+If no ingredient scaling is defined, the same quantity will be used for all serving sizes.
+
+```
+>> servings: 2|4|8
+Add @salt{1%tsp} // this is the same
+Add @salt{1|1|1%tsp} // as this
 ```
