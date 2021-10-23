@@ -114,6 +114,7 @@
 </li>
 <li><a href=#adding-pictures>Adding Pictures</a></li>
 <li><a href=#the-shopping-list-specification>The Shopping List Specification</a></li>
+<li><a href=#roadmap>Roadmap</a></li>
 </ul>
 <h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2>
 <p>Below is the specification for defining a recipe in CookLang.</p>
@@ -124,8 +125,6 @@
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Poke holes in @potato{2}.
 </code></pre></div><p>To use a unit of an item, such as weight or volume, add a <code>%</code> between the quantity and unit.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
-</code></pre></div><p>To modify the ingredient any other way, use parentheses.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Top with @green onions{1%tbsp}(finely chopped)
 </code></pre></div><h3 id=comments>Comments</h3>
 <p>You can add comments to CookLang text with <code>//</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>// Don&#39;t burn the roux!
@@ -137,20 +136,6 @@ Slowly add @milk{4%cup}, keep mixing
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; source: https://www.gimmesomeoven.com/baked-potato/
 &gt;&gt; time required: 1.5 hours
 &gt;&gt; course: dinner
-</code></pre></div><h4 id=servings>Servings</h4>
-<p>You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
-The metadata tag defines the serving sizes the recipe supports.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-</code></pre></div><p>Then, you can automatically scale ingredient quantities with <code>*</code>. This will multiply the quantity given by the number of servings selected.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-Add @milk{1/2*%cup} and mix until smooth.
-</code></pre></div><p>Alternatively, you can manually specify ingredient quantities for each serving size. This is useful for non-linear scaling.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-Add @milk{1|2|3%cup} and mix until smooth.
-</code></pre></div><p>If no ingredient scaling is defined, the same quantity will be used for all serving sizes.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-Add @salt{1%tsp} // this is the same
-Add @salt{1|1|1%tsp} // as this
 </code></pre></div><h3 id=cookware>Cookware</h3>
 <p>You can define any necessary cookware with <code>#</code>. Like ingredients, you don&rsquo;t need to use braces if it&rsquo;s a single word.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Place the potatoes into a #pot.
@@ -197,6 +182,21 @@ chicken
 
 [canned goods]
 tuna|chicken of the sea
+</code></pre></div><h2 id=roadmap>Roadmap</h2>
+<h3 id=servings-proposal>Servings (proposal)</h3>
+<p>You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
+The metadata tag defines the serving sizes the recipe supports.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+</code></pre></div><p>Then, you can automatically scale ingredient quantities with <code>*</code>. This will multiply the quantity given by the number of servings selected.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+Add @milk{1/2*%cup} and mix until smooth.
+</code></pre></div><p>Alternatively, you can manually specify ingredient quantities for each serving size. This is useful for non-linear scaling.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+Add @milk{1|2|3%cup} and mix until smooth.
+</code></pre></div><p>If no ingredient scaling is defined, the same quantity will be used for all serving sizes.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+Add @salt{1%tsp} // this is the same
+Add @salt{1|1|1%tsp} // as this
 </code></pre></div>
 </div>
 </div>
