@@ -14,12 +14,12 @@ CookLang and the tools we've built to use it, you can:
 Here's how the CookLang ecosystem makes that happen:
 
 * All recipes are human-readable text files.
-* Everything is a good old plain text file. No databases. And you have complete control over your information.
+* Everything is a file. No databases. And you have complete control over your information.
 * All the tools are simple, focused, and efficient; the UNIX way.
 
 ## Getting Started
 
-**Create a recipe file**, where each line is a step in the recipe. Tag your ingredients with @ and {}, then save your file. For a complete reference on CookLang, see the [language specification page](/docs/spec).
+**Create a recipe file**, where each line is a step in the recipe. Tag your ingredients with `@` and `{}`, then save your file. For a complete reference on CookLang, see the [language specification page](/docs/spec).
 
 **Install a recipe viewer.** We support a few tools for viewing CookLang recipes:
 * [The CookCLI program for Mac and Linux](/cli/) provides a webserver for presenting your recipes, viewable with any web browser.
