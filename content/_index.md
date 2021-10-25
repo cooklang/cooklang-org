@@ -3,7 +3,7 @@ title: 'CookLang – Recipe Markup Language'
 date: 2021-05-20T15:14:39+10:00
 ---
 
-CookLang is a markup language at the center of our open-source ecosystem for cooking and recipe management.
+![Recipes](/example.png)
 
 CookLang and the tools we've built to use it, you can:
 
@@ -14,24 +14,16 @@ CookLang and the tools we've built to use it, you can:
 Here's how the CookLang ecosystem makes that happen:
 
 * All recipes are human-readable text files.
-* Everything is a file. No databases. And you have complete control over your information.
+* Everything is a good old plain text file. No databases. And you have complete control over your information.
 * All the tools are simple, focused, and efficient; the UNIX way.
 
 ## Getting Started
 
 **Create a recipe file**, where each line is a step in the recipe. Tag your ingredients with @ and {}, then save your file. For a complete reference on CookLang, see the [language specification page](/docs/spec).
 
-```
-Then add @salt and @ground black pepper{} to taste.
-
-Poke holes in @potato{2}.
-
-Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
-```
-
 **Install a recipe viewer.** We support a few tools for viewing CookLang recipes:
-* [The iOS app for iPad and iPhone](/app/) allows you to read your recipe files directly from iCloud.
 * [The CookCLI program for Mac and Linux](/cli/) provides a webserver for presenting your recipes, viewable with any web browser.
+* [The iOS app for iPad and iPhone](/app/) allows you to read your recipe files directly from iCloud.
 
 **Cook something!** Open a recipe on your viewer of choice, whip out the ingredients, and make something tasty.
 

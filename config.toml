@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-ie"
-title = "Cook: recipe markup language"
+title = "CookLang: recipe markup language"
 themesDir = "./themes"
 theme = "hugo-whisper-theme"
 
@@ -36,9 +36,9 @@ summaryLength = 30
 
 [params]
   google_analytics_id=""
-  homepage_button_link = '/docs'
-  homepage_button_text = 'Read The Docs'
-  homepage_intro = 'Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal.'
+  # homepage_button_link = '/docs'
+  # homepage_button_text = 'Read The Docs'
+  # homepage_intro = 'Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal.'
   # homepage_image = '/images/terminal.gif'
   mainSections = ["docs", "cli", "app"]
 
@@ -46,15 +46,15 @@ summaryLength = 30
   # enable_anchor_link = true
 
   [params.homepage_meta_tags]
-    meta_description = "Cook is a markup language for recipes."
-    meta_og_title = "Cook – Recipe Markup Language"
+    meta_description = "CookLang is a markup language for recipes."
+    meta_og_title = "CookLang – Recipe Markup Language"
     meta_og_type = "website"
-    meta_og_url = "https://Cooklang.org"
+    meta_og_url = "https://cooklang.org"
     meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
-    meta_og_description = "Cook is a markup language for recipes."
-    meta_twitter_card = "summary"
-    meta_twitter_site = "@Cooklang"
-    meta_twitter_creator = "@Cooklang"
+    meta_og_description = "CookLang is a markup language for recipes."
+    # meta_twitter_card = "summary"
+    # meta_twitter_site = "@Cooklang"
+    # meta_twitter_creator = "@Cooklang"
 
   [params.logo]
       mobile = "/images/logo.svg"
