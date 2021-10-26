@@ -18,7 +18,9 @@ Features:
 - Create meal plans for each week, and then generate a shopping list.
 - Export shopping lists to email.
 
-### Signup for beta testing
+### Signup for beta testing (closed)
+
+Update: we were overwhelmed with the amount of responses and closed sign up. Thank you for participation.
 
 If you want to help us beta test CookApp for iOS you can join our beta testing program. You will dive in into CookLang ecosystem and help us make it better.
 
@@ -30,5 +32,3 @@ You will need:
 Next steps:
 
 You will recieve an email with an invitation link and setup instructions (with Testflight). Submit your feedback by email: {{< email >}}.
-
-{{< sign-up-form >}}
