@@ -103,21 +103,23 @@
 <ul>
 <li><a href=#ingredients>Ingredients</a></li>
 <li><a href=#comments>Comments</a></li>
-<li><a href=#metadata>Metadata</a>
-<ul>
-<li><a href=#servings>Servings</a></li>
-</ul>
-</li>
+<li><a href=#metadata>Metadata</a></li>
 <li><a href=#cookware>Cookware</a></li>
 <li><a href=#timer>Timer</a></li>
 </ul>
 </li>
-<li><a href=#adding-pictures>Adding Pictures</a></li>
 <li><a href=#the-shopping-list-specification>The Shopping List Specification</a></li>
+<li><a href=#conventions>Conventions</a>
+<ul>
+<li><a href=#adding-pictures>Adding Pictures</a></li>
+</ul>
+</li>
 <li><a href=#roadmap>Roadmap</a></li>
+<li><a href=#parser-implementation>Parser Imlementation</a></li>
+<li><a href=#syntax-highlighting>Syntax Highlighting</a></li>
 </ul>
 <h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2>
-<p>Below is the specification for defining a recipe in CookLang.</p>
+<p>Below is the specification for defining a recipe in cooklang.</p>
 <h3 id=ingredients>Ingredients</h3>
 <p>To define an ingredient, use the <code>@</code> symbol. If the ingredient&rsquo;s name contains multiple words, indicate the end of the name with <code>{}</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Then add @salt and @ground black pepper{} to taste.
@@ -143,14 +145,6 @@ Mash the potatoes with a #potato masher{}.
 </code></pre></div><h3 id=timer>Timer</h3>
 <p>You can define a timer using <code>~</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Lay the potatoes on a #baking sheet{} and place into the #oven{}. Bake for ~{25%minutes}.
-</code></pre></div><h2 id=adding-pictures>Adding Pictures</h2>
-<p>You can add images to your recipe by including a supported image file (<code>.png</code>,<code>.jpg</code>) matching the name of the recipe recipe in the same directory.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Baked Potato.cook
-Baked Potato.jpg
-</code></pre></div><p>You can also add images for specific steps by including a step number before the file extension.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Chicken French.cook
-Chicken French.0.jpg
-Chicken French.3.jpg
 </code></pre></div><h2 id=the-shopping-list-specification>The Shopping List Specification</h2>
 <p>To support the creation of shopping lists by apps and the command line tool, CookLang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
 You can use <code>[]</code> to define a category name. These names are arbitrary, so you can customize them to meet your needs. For example, each category could be an aisle or section of the store, such as <code>[produce]</code> and <code>[deli]</code>.</p>
@@ -182,6 +176,16 @@ chicken
 
 [canned goods]
 tuna|chicken of the sea
+</code></pre></div><h2 id=conventions>Conventions</h2>
+<p>There&rsquo;re things which aren&rsquo;t part of the language specification but rather common conventions used in tools build on top of the language.</p>
+<h3 id=adding-pictures>Adding Pictures</h3>
+<p>You can add images to your recipe by including a supported image file (<code>.png</code>,<code>.jpg</code>) matching the name of the recipe recipe in the same directory.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Baked Potato.cook
+Baked Potato.jpg
+</code></pre></div><p>You can also add images for specific steps by including a step number before the file extension.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Chicken French.cook
+Chicken French.0.jpg
+Chicken French.3.jpg
 </code></pre></div><h2 id=roadmap>Roadmap</h2>
 <h3 id=servings-proposal>Servings (proposal)</h3>
 <p>You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
@@ -197,7 +201,18 @@ Add @milk{1|2|3%cup} and mix until smooth.
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
 Add @salt{1%tsp} // this is the same
 Add @salt{1|1|1%tsp} // as this
-</code></pre></div>
+</code></pre></div><h2 id=parser-implementation>Parser Implementation</h2>
+<ul>
+<li><a href=https://github.com/cooklang/CookInSwift>Swift</a></li>
+<li><a href=https://github.com/umgefahren/cook-with-rust>Rust</a> WIP</li>
+</ul>
+<h2 id=syntax-highlighting>Syntax Highlighting</h2>
+<ul>
+<li><a href=https://github.com/cooklang/cook-mode>Emacs</a></li>
+<li><a href=https://github.com/cooklang/CookSublime>SublimeText</a></li>
+<li><a href=https://github.com/luizribeiro/vim-cooklang>Vim</a></li>
+<li><a href=https://github.com/cooklang/CookVSCode>VSCode</a></li>
+</ul>
 </div>
 </div>
 </div>
