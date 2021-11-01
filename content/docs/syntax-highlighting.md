@@ -7,8 +7,14 @@ summary: Instructions for installing syntax highlighting addons for some of the 
 
 If you would like to install a CookLang syntax highlighting addon for your favorite text editor, here are the instructions for the programs we support.
 
+* [Emacs via GitHub](#emacs-via-github)
 * [Sublime via Package Control](#sublime-via-package-control)
+* [Vim via GitHub](#vim-via-github)
 * [VSCode via Extensions](#vscode-via-extensions)
+
+## Emacs via GitHub
+
+* [Install from here](https://github.com/cooklang/cook-mode)
 
 ## Sublime via Package Control
 
@@ -19,6 +25,9 @@ It is highly recommended to install CookLang with Package Control as it automati
 3. Search for `Package Control: Install Package` and hit Enter.
 4. Type CookLang and press Enter to install it.
 
+## Vim via GitHub
+
+* [Install from here](https://github.com/luizribeiro/vim-cooklang)
 
 ## VSCode via Extensions
 
