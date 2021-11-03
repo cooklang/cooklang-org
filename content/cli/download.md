@@ -24,6 +24,13 @@ Binary download:
 
 ## macOS
 
+Homebrew:
+
+```
+brew tap cooklang/tap
+brew install cooklang/tap/cook
+```
+
 Binary download:
 
 {{< cta-button "Download 64-bit" "https://github.com/cooklang/CookCLI/releases/download/v0.0.11/CookCLI_0.0.11_darwin_amd64_arm64.zip" >}}
