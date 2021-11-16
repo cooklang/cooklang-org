@@ -23,6 +23,11 @@ summary: This is the specification and reference for writing a recipe in CookLan
 ## The .cook Recipe Specification
 Below is the specification for defining a recipe in cooklang.
 
+More formal description of the language can be found [here](https://github.com/cooklang/spec/blob/main/EBNF.md).
+
+## The .cook Recipe Specification
+Below is the specification for defining a recipe in cooklang.
+
 ### Ingredients
 
 To define an ingredient, use the `@` symbol. If the ingredient's name contains multiple words, indicate the end of the name with `{}`.
@@ -44,12 +49,16 @@ Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
 ```
 
 ### Comments
-You can add comments to CookLang text with `//`.
+You can add comments up to the end of the line to CookLang text with `--`.
 ```
-// Don't burn the roux!
+-- Don't burn the roux!
 
-Mash @potato{2%kg} until smooth // alternatively, boil 'em first, then mash 'em, then stick 'em in a stew.
-Slowly add @milk{4%cup}, keep mixing
+Mash @potato{2%kg} until smooth -- alternatively, boil 'em first, then mash 'em, then stick 'em in a stew.
+```
+
+Or block comments with `[- comment text -]`.
+```
+Slowly add @milk{4%cup} [- TODO change units to litres -], keep mixing
 ```
 
 ### Metadata
@@ -155,14 +164,15 @@ If no ingredient scaling is defined, the same quantity will be used for all serv
 
 ```
 >> servings: 2|4|8
-Add @salt{1%tsp} // this is the same
-Add @salt{1|1|1%tsp} // as this
+Add @salt{1%tsp} -- this is the same
+Add @salt{1|1|1%tsp} -- as this
 ```
 
 ## Parser Implementation
 
 * [Swift](https://github.com/cooklang/CookInSwift)
 * [Rust](https://github.com/umgefahren/cook-with-rust) WIP
+* [.NET](https://github.com/heytherewill/cooklangnet)
 
 ## Syntax Highlighting
 
