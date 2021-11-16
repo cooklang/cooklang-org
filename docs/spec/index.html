@@ -120,6 +120,9 @@
 </ul>
 <h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2>
 <p>Below is the specification for defining a recipe in cooklang.</p>
+<p>More formal description of the language can be found <a href=https://github.com/cooklang/spec/blob/main/EBNF.md>here</a>.</p>
+<h2 id=the-cook-recipe-specification-1>The .cook Recipe Specification</h2>
+<p>Below is the specification for defining a recipe in cooklang.</p>
 <h3 id=ingredients>Ingredients</h3>
 <p>To define an ingredient, use the <code>@</code> symbol. If the ingredient&rsquo;s name contains multiple words, indicate the end of the name with <code>{}</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Then add @salt and @ground black pepper{} to taste.
@@ -128,11 +131,12 @@
 </code></pre></div><p>To use a unit of an item, such as weight or volume, add a <code>%</code> between the quantity and unit.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
 </code></pre></div><h3 id=comments>Comments</h3>
-<p>You can add comments to CookLang text with <code>//</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>// Don&#39;t burn the roux!
+<p>You can add comments up to the end of the line to CookLang text with <code>--</code>.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>-- Don&#39;t burn the roux!
 
-Mash @potato{2%kg} until smooth // alternatively, boil &#39;em first, then mash &#39;em, then stick &#39;em in a stew.
-Slowly add @milk{4%cup}, keep mixing
+Mash @potato{2%kg} until smooth -- alternatively, boil &#39;em first, then mash &#39;em, then stick &#39;em in a stew.
+</code></pre></div><p>Or block comments with <code>[- comment text -]</code>.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Slowly add @milk{4%cup} [- TODO change units to litres -], keep mixing
 </code></pre></div><h3 id=metadata>Metadata</h3>
 <p>You can add metadata tags to your recipe for information such as source (or author), meal, total prep time, and number of people served.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; source: https://www.gimmesomeoven.com/baked-potato/
@@ -199,12 +203,13 @@ Add @milk{1/2*%cup} and mix until smooth.
 Add @milk{1|2|3%cup} and mix until smooth.
 </code></pre></div><p>If no ingredient scaling is defined, the same quantity will be used for all serving sizes.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-Add @salt{1%tsp} // this is the same
-Add @salt{1|1|1%tsp} // as this
+Add @salt{1%tsp} -- this is the same
+Add @salt{1|1|1%tsp} -- as this
 </code></pre></div><h2 id=parser-implementation>Parser Implementation</h2>
 <ul>
 <li><a href=https://github.com/cooklang/CookInSwift>Swift</a></li>
 <li><a href=https://github.com/umgefahren/cook-with-rust>Rust</a> WIP</li>
+<li><a href=https://github.com/heytherewill/cooklangnet>.NET</a></li>
 </ul>
 <h2 id=syntax-highlighting>Syntax Highlighting</h2>
 <ul>
