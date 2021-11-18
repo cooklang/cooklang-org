@@ -1,17 +1,17 @@
 ---
-title: 'CookLang – Recipe Markup Language'
+title: 'Cooklang – Recipe Markup Language'
 date: 2021-05-20T15:14:39+10:00
 ---
 
 ![Recipes](/example.png)
 
-CookLang and the tools we've built to use it, you can:
+Cooklang and the tools we've built to use it, you can:
 
 * simplify your personal recipe management;
 * streamline your shopping routine;
 * make cooking more fun.
 
-Here's how the CookLang ecosystem makes that happen:
+Here's how the Cooklang ecosystem makes that happen:
 
 * All recipes are human-readable text files.
 * Everything is a file. No databases. And you have complete control over your information.
@@ -19,9 +19,9 @@ Here's how the CookLang ecosystem makes that happen:
 
 ## Getting Started
 
-**Create a recipe file**, where each line is a step in the recipe. Tag your ingredients with `@` and `{}`, then save your file. For a complete reference on CookLang, see the [language specification page](/docs/spec).
+**Create a recipe file**, where each line is a step in the recipe. Tag your ingredients with `@` and `{}`, then save your file. For a complete reference on Cooklang, see the [language specification page](/docs/spec).
 
-**Install a recipe viewer.** We support a few tools for viewing CookLang recipes:
+**Install a recipe viewer.** We support a few tools for viewing Cooklang recipes:
 * [The CookCLI program for Mac and Linux](/cli/) provides a webserver for presenting your recipes, viewable with any web browser.
 * [The iOS app for iPad and iPhone](/app/) allows you to read your recipe files directly from iCloud.
 

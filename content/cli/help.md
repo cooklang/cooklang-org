@@ -36,8 +36,8 @@ Table of Contents
 # `cook` 
 
 ```
-OVERVIEW: A toolkit for command-line interaction with CookLang text files.
-Documentation can be found at https://cooklang.org/cli/help/ and issues reported at https://github.com/CookLang/CookCLI.
+OVERVIEW: A toolkit for command-line interaction with Cooklang text files.
+Documentation can be found at https://cooklang.org/cli/help/ and issues reported at https://github.com/Cooklang/CookCLI.
 
 USAGE: cook <subcommand>
 
@@ -66,9 +66,9 @@ OPTIONS:
   -h, --help              Show help information.
 
 SUBCOMMANDS:
-  read                    Parse and print a CookLang recipe file
-  validate                Check for syntax errors in one or more CookLang recipe files (TODO)
-  prettify                Edit a CookLang recipe file for style consistency (TODO)
+  read                    Parse and print a Cooklang recipe file
+  validate                Check for syntax errors in one or more Cooklang recipe files (TODO)
+  prettify                Edit a Cooklang recipe file for style consistency (TODO)
   image                   Download a random image from upsplash.com to match the recipe title
 
   See 'cook help recipe <subcommand>' for detailed help.
@@ -77,7 +77,7 @@ SUBCOMMANDS:
 ### `read`
 
 ```
-OVERVIEW: Parse and print a CookLang recipe file
+OVERVIEW: Parse and print a Cooklang recipe file
 
 USAGE: cook recipe read [<recipe-file>] [--output-format <output-format>] [--only-ingredients]
 
@@ -96,7 +96,7 @@ OPTIONS:
 ```
 Usage: cook recipe validate FILE...
 
-Validate the CookLang syntax of one or more CookLang recipe files
+Validate the Cooklang syntax of one or more Cooklang recipe files
 ```
 
 ### `prettify`
@@ -104,7 +104,7 @@ Validate the CookLang syntax of one or more CookLang recipe files
 ```
 Usage: cook recipe prettify FILE
 
-Edit the content of a CookLang recipe file for style consistency
+Edit the content of a Cooklang recipe file for style consistency
 ```
  -->
 
@@ -208,4 +208,4 @@ OPTIONS:
 
 # Questions and Issues
 
-If you have a question about CookCLI that isn't answered here, open an issue on the [CookLang/CookCLI GitHub repository](https://github.com/CookLang/CookCLI).
+If you have a question about CookCLI that isn't answered here, open an issue on the [Cooklang/CookCLI GitHub repository](https://github.com/Cooklang/CookCLI).

@@ -20,7 +20,7 @@ It's nice to have an apple or banana sometimes, but it doesn't make sense to hav
 After the first time, you can simply refer to the ingredient by name and relative quantity (e.g. "then put half the remaining bacon in the oven to crispen.").
 
 ### Aim for scalable recipes
-When writing a recipe, use the quantity scaling features of CookLang to make the recipe scale as well as possible. We usually aim to support 3 different serving sizes in our sample recipes. But some recipes don't scale up or down well, and that's okay! A cake or pie won't scale nearly as well as soup.
+When writing a recipe, use the quantity scaling features of Cooklang to make the recipe scale as well as possible. We usually aim to support 3 different serving sizes in our sample recipes. But some recipes don't scale up or down well, and that's okay! A cake or pie won't scale nearly as well as soup.
 
 ### Send us your tips and tricks!
-We love to hear good ideas about how to use CookLang, CookApp, and CookCLI. Check out our [contact page](/contact/)
+We love to hear good ideas about how to use Cooklang, CookApp, and CookCLI. Check out our [contact page](/contact/)

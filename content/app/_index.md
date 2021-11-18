@@ -1,5 +1,5 @@
 ---
-title: 'iOS Recipe reader for CookLang'
+title: 'iOS Recipe reader for Cooklang'
 date: 2021-05-20T15:14:39+10:00
 ---
 
@@ -13,7 +13,7 @@ Save your money - We charge once. No subscriptions, no microtransactions.
 Own your data - Maintain complete control and ownership of your data.
 
 Features:
-- Read recipe files written in the CookLang markup language.
+- Read recipe files written in the Cooklang markup language.
 - Import recipes from the community recipe repository (via CookCLI).
 - Create meal plans for each week, and then generate a shopping list.
 - Export shopping lists to email.
@@ -22,7 +22,7 @@ Features:
 
 Update: we were overwhelmed with the amount of responses and closed sign up. Thank you for participation.
 
-If you want to help us beta test CookApp for iOS you can join our beta testing program. You will dive in into CookLang ecosystem and help us make it better.
+If you want to help us beta test CookApp for iOS you can join our beta testing program. You will dive in into Cooklang ecosystem and help us make it better.
 
 You will need:
 

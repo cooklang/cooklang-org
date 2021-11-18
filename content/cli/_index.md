@@ -12,7 +12,7 @@ summary: All about the CookCLI command line toolbox
 {{< /rawhtml >}}
 
 
-The CookCLI tool is designed to make command line and shell scripting automation possible for the CookLang ecosystem.
+The CookCLI tool is designed to make command line and shell scripting automation possible for the Cooklang ecosystem.
 
 Check out the tool and report bugs [on GitHub](https://github.com/cooklang/CookCLI), or check the pages below for information about each command.
 

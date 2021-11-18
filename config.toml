@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-ie"
-title = "CookLang: recipe markup language"
+title = "Cooklang: recipe markup language"
 themesDir = "./themes"
 theme = "hugo-whisper-theme"
 
@@ -46,12 +46,12 @@ summaryLength = 30
   # enable_anchor_link = true
 
   [params.homepage_meta_tags]
-    meta_description = "CookLang is a markup language for recipes."
-    meta_og_title = "CookLang – Recipe Markup Language"
+    meta_description = "Cooklang is a markup language for recipes."
+    meta_og_title = "Cooklang – Recipe Markup Language"
     meta_og_type = "website"
     meta_og_url = "https://cooklang.org"
     meta_og_image = "https://cooklang.org/example.png"
-    meta_og_description = "CookLang is a markup language for recipes."
+    meta_og_description = "Cooklang is a markup language for recipes."
     # meta_twitter_card = "summary"
     # meta_twitter_site = "@Cooklang"
     # meta_twitter_creator = "@Cooklang"
