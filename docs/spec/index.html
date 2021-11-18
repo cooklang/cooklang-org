@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Cooklang Specification - CookLang: recipe markup language</title>
+<title>Cooklang Specification - Cooklang: recipe markup language</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=icon href=/favicon.png>
 <link rel=stylesheet href=/css/style.min.6b810f933e568f3ba607b4f5b1cf85fec6ca57b9c291b318c80724d874a7abf3.css>
@@ -131,7 +131,7 @@
 </code></pre></div><p>To use a unit of an item, such as weight or volume, add a <code>%</code> between the quantity and unit.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
 </code></pre></div><h3 id=comments>Comments</h3>
-<p>You can add comments up to the end of the line to CookLang text with <code>--</code>.</p>
+<p>You can add comments up to the end of the line to Cooklang text with <code>--</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>-- Don&#39;t burn the roux!
 
 Mash @potato{2%kg} until smooth -- alternatively, boil &#39;em first, then mash &#39;em, then stick &#39;em in a stew.
@@ -150,7 +150,7 @@ Mash the potatoes with a #potato masher{}.
 <p>You can define a timer using <code>~</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Lay the potatoes on a #baking sheet{} and place into the #oven{}. Bake for ~{25%minutes}.
 </code></pre></div><h2 id=the-shopping-list-specification>The Shopping List Specification</h2>
-<p>To support the creation of shopping lists by apps and the command line tool, CookLang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
+<p>To support the creation of shopping lists by apps and the command line tool, Cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
 You can use <code>[]</code> to define a category name. These names are arbitrary, so you can customize them to meet your needs. For example, each category could be an aisle or section of the store, such as <code>[produce]</code> and <code>[deli]</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>[produce]
 potatoes
