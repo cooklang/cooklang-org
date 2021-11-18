@@ -7,9 +7,12 @@ date: 2021-05-20T15:14:39+10:00
 ![Recipe](/app/recipe-ingredients.png)
 ![Shopping list](/app/shopping-list.png)
 
-Make cooking as quick and easy as possible with CookApp! 
+Make cooking as quick and easy as possible with Cooklang App!
+
 Save your time - Browse recipes by time-to-prepare, create meal plans, and optimize your shopping list.
+
 Save your money - We charge once. No subscriptions, no microtransactions.
+
 Own your data - Maintain complete control and ownership of your data.
 
 Features:
@@ -22,7 +25,7 @@ Features:
 
 Update: we were overwhelmed with the amount of responses and closed sign up. Thank you for participation.
 
-If you want to help us beta test CookApp for iOS you can join our beta testing program. You will dive in into Cooklang ecosystem and help us make it better.
+If you want to help us beta test Cooklang App for iOS you can join our beta testing program. You will dive in into Cooklang ecosystem and help us make it better.
 
 You will need:
 
@@ -31,4 +34,8 @@ You will need:
 
 Next steps:
 
-You will recieve an email with an invitation link and setup instructions (with Testflight). Submit your feedback by email: {{< email >}}.
+You will recieve an email with an invitation link and setup instructions (with Testflight).
+
+Submit your feedback in [discussions](https://github.com/cooklang/cooklang-ios-app/discussions) or by email: {{< email >}}.
+
+Please open an issue [here](https://github.com/cooklang/cooklang-ios-app/issues) to report a bug.
