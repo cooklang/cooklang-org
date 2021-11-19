@@ -118,11 +118,9 @@
 <li><a href=#parser-implementation>Parser Imlementation</a></li>
 <li><a href=#syntax-highlighting>Syntax Highlighting</a></li>
 </ul>
-<h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2>
-<p>Below is the specification for defining a recipe in cooklang.</p>
 <p>More formal description of the language can be found <a href=https://github.com/cooklang/spec/blob/main/EBNF.md>here</a>.</p>
-<h2 id=the-cook-recipe-specification-1>The .cook Recipe Specification</h2>
-<p>Below is the specification for defining a recipe in cooklang.</p>
+<h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2>
+<p>Below is the specification for defining a recipe in Cooklang.</p>
 <h3 id=ingredients>Ingredients</h3>
 <p>To define an ingredient, use the <code>@</code> symbol. If the ingredient&rsquo;s name contains multiple words, indicate the end of the name with <code>{}</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Then add @salt and @ground black pepper{} to taste.
@@ -149,7 +147,10 @@ Mash the potatoes with a #potato masher{}.
 </code></pre></div><h3 id=timer>Timer</h3>
 <p>You can define a timer using <code>~</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Lay the potatoes on a #baking sheet{} and place into the #oven{}. Bake for ~{25%minutes}.
-</code></pre></div><h2 id=the-shopping-list-specification>The Shopping List Specification</h2>
+</code></pre></div><p>Timers can have a name too:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Boil @eggs{2} for ~eggs{3%minutes}.
+</code></pre></div><p>Applications can use this name in notifications.</p>
+<h2 id=the-shopping-list-specification>The Shopping List Specification</h2>
 <p>To support the creation of shopping lists by apps and the command line tool, Cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
 You can use <code>[]</code> to define a category name. These names are arbitrary, so you can customize them to meet your needs. For example, each category could be an aisle or section of the store, such as <code>[produce]</code> and <code>[deli]</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>[produce]
