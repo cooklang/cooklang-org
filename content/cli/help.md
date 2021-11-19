@@ -69,7 +69,7 @@ SUBCOMMANDS:
   read                    Parse and print a Cooklang recipe file
   validate                Check for syntax errors in one or more Cooklang recipe files (TODO)
   prettify                Edit a Cooklang recipe file for style consistency (TODO)
-  image                   Download a random image from upsplash.com to match the recipe title
+  image                   Download a random image from unsplash.com to match the recipe title
 
   See 'cook help recipe <subcommand>' for detailed help.
 ```
@@ -112,7 +112,7 @@ Edit the content of a Cooklang recipe file for style consistency
 ### `image`
 
 ```
-OVERVIEW: Download a random image from upsplash.com to match the recipe title
+OVERVIEW: Download a random image from unsplash.com to match the recipe title
 
 USAGE: cook recipe image <file>
 
