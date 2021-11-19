@@ -19,7 +19,7 @@ Features:
 - Read recipe files written in the Cooklang markup language.
 - Import recipes from the community recipe repository (via CookCLI).
 - Create meal plans for each week, and then generate a shopping list.
-- Export shopping lists to email.
+- Export shopping lists to pdf.
 
 ### Signup for beta testing (closed)
 

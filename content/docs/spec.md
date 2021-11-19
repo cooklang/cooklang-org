@@ -20,13 +20,10 @@ summary: This is the specification and reference for writing a recipe in Cooklan
 * [Syntax Highlighting](#syntax-highlighting)
 
 
-## The .cook Recipe Specification
-Below is the specification for defining a recipe in cooklang.
-
 More formal description of the language can be found [here](https://github.com/cooklang/spec/blob/main/EBNF.md).
 
 ## The .cook Recipe Specification
-Below is the specification for defining a recipe in cooklang.
+Below is the specification for defining a recipe in Cooklang.
 
 ### Ingredients
 
@@ -81,6 +78,14 @@ You can define a timer using `~`.
 ```
 Lay the potatoes on a #baking sheet{} and place into the #oven{}. Bake for ~{25%minutes}.
 ```
+
+Timers can have a name too:
+
+```
+Boil @eggs{2} for ~eggs{3%minutes}.
+```
+
+Applications can use this name in notifications.
 
 ## The Shopping List Specification
 To support the creation of shopping lists by apps and the command line tool, Cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
