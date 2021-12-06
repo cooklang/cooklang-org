@@ -1,5 +1,5 @@
 ---
-title: 'Terms & Conditions'
+title: 'Mobile App Terms of Service'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 40
@@ -9,30 +9,86 @@ blank: true
 ---
 
 
-By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Alina Dubovskaya.
+## Mobile App Terms of Service
 
-Alina Dubovskaya is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
+These Terms of Service govern your use of CooklangApp, our website located at [https://cooklang.org/app/](https://cooklang.org/app/), and any related services provided by Alexey Dubovskoy.
 
-The Alina Dubovskaya app stores and processes personal data that you have provided to us, in order to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Alina Dubovskaya app won’t work properly or at all.
+When you use CooklangApp, you agree to abide by these Terms of Service and to comply with all applicable laws and regulations. If you do not agree with these Terms of Service, you are prohibited from further using the app, accessing our website, or using any other services provided by Alexey Dubovskoy.
 
-You should be aware that there are certain things that Alina Dubovskaya will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Alina Dubovskaya cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+If you access or download CooklangApp from Apple App Store you agree to any Usage Rules set forth in the App Store Terms of Service.
 
-If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.
+We, Alexey Dubovskoy, reserve the right to review and amend any of these Terms of Service at our sole discretion. Upon doing so, we will update this page and notify you through the app and/or the email address you provided when you created your account. Any changes to these Terms of Service will take effect immediately from the date of publication.
 
-Along the same lines, Alina Dubovskaya cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Alina Dubovskaya cannot accept responsibility.
+These Terms of Service were last updated on 6 December 2021.
 
-With respect to Alina Dubovskaya’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Alina Dubovskaya accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
+### Limitations of Use
 
-At some point, we may wish to update the app. The app is currently available on iOS – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Alina Dubovskaya does not promise that it will always update the app so that it is relevant to you and/or works with the iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+By using CooklangApp and our website, you warrant on behalf of yourself, any entity who you represent who has entered into these Terms of Service, and your users that you will not:
 
-**Changes to This Terms and Conditions**
+1.  modify, copy, prepare derivative works of, decompile, or reverse engineer CooklangApp or any materials and software contained within CooklangApp or on our website;
+2.  remove any copyright or other proprietary notations from CooklangApp or any materials and software contained within CooklangApp or on our website;
+3.  transfer CooklangApp or any of its associated materials to another person or “mirror” the materials on any other server;
+4.  knowingly or negligently use CooklangApp or any of its associated services in a way that abuses or disrupts our networks or any other service Alexey Dubovskoy provides;
+5.  use CooklangApp or its associated services to transmit or publish any harassing, indecent, obscene, fraudulent, or unlawful material;
+6.  use CooklangApp or its associated services in violation of any applicable laws or regulations;
+7.  use CooklangApp to send unauthorised advertising or spam;
+8.  harvest, collect, or gather user data without the user’s consent; or
+9.  use CooklangApp or its associated services in such a way that may infringe the privacy, intellectual property rights, or other rights of third parties.
 
-I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.
+### Intellectual Property
 
-These terms and conditions are effective as of 2021-05-25
+The intellectual property in the materials in CooklangApp and on our website are owned by or licensed to Alexey Dubovskoy. You may download CooklangApp to view, use and display the application on your mobile device for your personal use only.
 
-**Contact Us**
+This constitutes the grant of a license, not a transfer of title. This license shall automatically terminate if you violate any of these restrictions or these Terms of Service and may be terminated by Alexey Dubovskoy at any time.
 
-If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at alinathedeveloper@gmail.com.
+### Automatic Updates
 
-This Terms and Conditions page was generated by [App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/)
+You give us permission to download and install updates to CooklangApp on your device in accordance with your privacy preferences. This permission can be revoked at any time by deleting CooklangApp from your device.
+
+### Liability
+
+CooklangApp and the materials in CooklangApp and on our website are provided on an 'as is' basis. To the extent permitted by law, Alexey Dubovskoy makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property, or other violation of rights.
+
+In no event shall Alexey Dubovskoy or its suppliers be liable for any consequential loss suffered or incurred by you or any third party arising from the use or inability to use CooklangApp, our website, or any other services provided by Alexey Dubovskoy or the materials in CooklangApp, even if Alexey Dubovskoy or an authorised representative has been notified, orally or in writing, of the possibility of such damage.
+
+In the context of this agreement, “consequential loss” includes any consequential loss, indirect loss, real or anticipated loss of profit, loss of benefit, loss of revenue, loss of business, loss of goodwill, loss of opportunity, loss of savings, loss of reputation, loss of use and/or loss or corruption of data, whether under statute, contract, equity, tort (including negligence), indemnity or otherwise.
+
+Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+
+### Accuracy of Materials
+
+The materials appearing in CooklangApp or on our website are not comprehensive and are for general information purposes only. To the extent permitted by law, Alexey Dubovskoy does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials in CooklangApp or on our website, or otherwise relating to such materials or on any resources linked to CooklangApp and our website.
+
+### Links
+
+Alexey Dubovskoy has not reviewed all of the sites linked to CooklangApp or on its corresponding website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement, approval or control by Alexey Dubovskoy of the site. Use of any such linked website is at your own risk and we strongly advise you make your own investigations with respect to the suitability of those sites.
+
+### Notice regarding Apple
+
+To the extent that you are using or accessing CooklangApp on an iOS device, you acknowledge and agree to the terms of this clause. You acknowledge that these Terms of Service are between you and Alexey Dubovskoy only, not with Apple Inc. (Apple), and Apple is not responsible for CooklangApp and any materials available in CooklangApp.
+
+Apple has no obligation to furnish you with any maintenance and support services with respect to CooklangApp.
+
+If CooklangApp fails to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price of the mobile application to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to CooklangApp and any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be our responsibility.
+
+Apple is not responsible for addressing any claims by you or any third party relating to CooklangApp or your use of CooklangApp, including but not limited to (1) product liability claims; (2) any claim that our mobile application fails to conform to any applicable legal or regulatory requirement; and (3) claims arising under consumer protection or similar legislation.
+
+Apple is not responsible for the investigation, defence, settlement and discharge of any third-party claim that our mobile application infringes that third party’s intellectual property rights.
+
+You agree to comply with any applicable third-party terms when using CooklangApp, including any Usage Rules set forth in the Apple App Store Agreement of Service.
+
+Apple and Apple’s subsidiaries are third-party beneficiaries of these Terms of Service and, upon your acceptance of these Terms of Service, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms of Service against you as a third-party beneficiary of these Terms of Service.
+
+You hereby represent and warrant that (1) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (2) you are not listed on any U.S. Government list of prohibited or restricted parties.
+
+### Right to Terminate
+
+We may suspend or terminate your right to use CooklangApp and these Terms of Service immediately upon written notice to you for any breach of these Terms of Service.
+
+### Severance
+
+Any term of these Terms of Service which is wholly or partially void or unenforceable is severed to the extent that it is void or unenforceable. The validity of the remainder of these Terms of Service is not affected.
+
+### Governing Law
+
+These Terms of Service are governed by and construed in accordance with the laws of Ireland. You irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
