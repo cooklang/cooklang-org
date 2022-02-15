@@ -6,6 +6,7 @@ weight: 1
 summary: This is the specification and reference for writing a recipe in Cooklang.
 ---
 
+* [About Cooklang](#about-cooklang)
 * [The .cook Recipe Specification](#the-cook-recipe-specification)
    * [Ingredients](#ingredients)
    * [Comments](#comments)
@@ -15,12 +16,11 @@ summary: This is the specification and reference for writing a recipe in Cooklan
 * [The Shopping List Specification](#the-shopping-list-specification)
 * [Conventions](#conventions)
    * [Adding Pictures](#adding-pictures)
-* [Roadmap](#roadmap)
-* [Parser Imlementation](#parser-implementation)
+* [Projects Which Use Cooklang](#projects-which-use-cooklang)
 * [Syntax Highlighting](#syntax-highlighting)
 
-
-More formal description of the language can be found [here](https://github.com/cooklang/spec/blob/main/EBNF.md).
+## About Cooklang
+Cooklang is the markup language at the center of an open-source ecosystem for cooking and recipe management. In Cooklang, each text file is a recipe written as plain-english instructions with markup syntax to add machine-parsible information about required ingredients, cookware, time, and metadata.
 
 ## The .cook Recipe Specification
 Below is the specification for defining a recipe in Cooklang.
@@ -142,55 +142,18 @@ Chicken French.0.jpg
 Chicken French.3.jpg
 ```
 
-## Roadmap
+## Projects Which Use Cooklang
 
-### Servings (proposal)
-You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
-The metadata tag defines the serving sizes the recipe supports.
+* [Cooklang playground](https://biowaffeln.github.io/cooklang-parser/)
+* [Obsidian plugin](https://github.com/deathau/cooklang-obsidian)
+* [Official command line application](https://github.com/cooklang/CookCLI)
+* [Official iOS application](https://cooklang.org/app/)
 
-```
->> servings: 2|4|8
-```
-
-Then, you can automatically scale ingredient quantities with `*`. This will multiply the quantity given by the number of servings selected.
-
-```
->> servings: 2|4|8
-Add @milk{1/2*%cup} and mix until smooth.
-```
-Alternatively, you can manually specify ingredient quantities for each serving size. This is useful for non-linear scaling.
-
-```
->> servings: 2|4|8
-Add @milk{1|2|3%cup} and mix until smooth.
-```
-
-If no ingredient scaling is defined, the same quantity will be used for all serving sizes.
-
-```
->> servings: 2|4|8
-Add @salt{1%tsp} -- this is the same
-Add @salt{1|1|1%tsp} -- as this
-```
-
-## Parser Implementation
-Abstract:
-* [Canonical tests](https://github.com/cooklang/spec/tree/main/tests)
-* [Tree-sitter](https://github.com/addcninblue/tree-sitter-cooklang)
-
-Particular languages:
-* [.NET](https://github.com/heytherewill/cooklangnet)
-* [C](https://github.com/cooklang/cook-in-c) WIP
-* [Clojure](https://github.com/kiranshila/cooklang-clj)
-* [Go](https://github.com/aquilax/cooklang-go)
-* [Lua](https://github.com/michal-h21/cooklang-lua)
-* [Python](https://github.com/luizribeiro/py-cooklang)
-* [Rust](https://github.com/umgefahren/cook-with-rust) WIP
-* [Swift](https://github.com/cooklang/CookInSwift)
 
 ## Syntax Highlighting
 
 * [Emacs](https://github.com/cooklang/cook-mode)
+* [Nano](https://github.com/le-jun/cooklang.nanorc)
 * [SublimeText](https://github.com/cooklang/CookSublime)
 * [Vim](https://github.com/luizribeiro/vim-cooklang)
 * [VSCode](https://github.com/cooklang/CookVSCode)

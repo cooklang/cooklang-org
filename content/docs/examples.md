@@ -9,7 +9,7 @@ Here is an example of a full recipe.
 
 ## Easy pancakes
 
-```ng2
+```
 -- Source: https://www.jamieoliver.com/recipes/eggs-recipes/easy-pancakes/
 
 Crack the @eggs{3} into a blender, then add the @flour{125%g}, @milk{250%ml} and @sea salt{1%pinch}, and blitz until smooth.
