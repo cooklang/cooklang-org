@@ -83,6 +83,12 @@
 <a href=/docs/spec/>Cooklang Specification</a>
 </li>
 <li>
+<a href=/docs/roadmap/>Cooklang Roadmap</a>
+</li>
+<li>
+<a href=/docs/for-developers/>For Developers</a>
+</li>
+<li>
 <a href=/docs/best-practices/>Tips, tricks, and best practices</a>
 </li>
 <li>
@@ -99,6 +105,7 @@
 <h1 class=title>Cooklang Specification</h1>
 <div class=content>
 <ul>
+<li><a href=#about-cooklang>About Cooklang</a></li>
 <li><a href=#the-cook-recipe-specification>The .cook Recipe Specification</a>
 <ul>
 <li><a href=#ingredients>Ingredients</a></li>
@@ -114,11 +121,11 @@
 <li><a href=#adding-pictures>Adding Pictures</a></li>
 </ul>
 </li>
-<li><a href=#roadmap>Roadmap</a></li>
-<li><a href=#parser-implementation>Parser Imlementation</a></li>
+<li><a href=#projects-which-use-cooklang>Projects Which Use Cooklang</a></li>
 <li><a href=#syntax-highlighting>Syntax Highlighting</a></li>
 </ul>
-<p>More formal description of the language can be found <a href=https://github.com/cooklang/spec/blob/main/EBNF.md>here</a>.</p>
+<h2 id=about-cooklang>About Cooklang</h2>
+<p>Cooklang is the markup language at the center of an open-source ecosystem for cooking and recipe management. In Cooklang, each text file is a recipe written as plain-english instructions with markup syntax to add machine-parsible information about required ingredients, cookware, time, and metadata.</p>
 <h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2>
 <p>Below is the specification for defining a recipe in Cooklang.</p>
 <h3 id=ingredients>Ingredients</h3>
@@ -191,41 +198,17 @@ Baked Potato.jpg
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Chicken French.cook
 Chicken French.0.jpg
 Chicken French.3.jpg
-</code></pre></div><h2 id=roadmap>Roadmap</h2>
-<h3 id=servings-proposal>Servings (proposal)</h3>
-<p>You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
-The metadata tag defines the serving sizes the recipe supports.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-</code></pre></div><p>Then, you can automatically scale ingredient quantities with <code>*</code>. This will multiply the quantity given by the number of servings selected.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-Add @milk{1/2*%cup} and mix until smooth.
-</code></pre></div><p>Alternatively, you can manually specify ingredient quantities for each serving size. This is useful for non-linear scaling.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-Add @milk{1|2|3%cup} and mix until smooth.
-</code></pre></div><p>If no ingredient scaling is defined, the same quantity will be used for all serving sizes.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
-Add @salt{1%tsp} -- this is the same
-Add @salt{1|1|1%tsp} -- as this
-</code></pre></div><h2 id=parser-implementation>Parser Implementation</h2>
-<p>Abstract:</p>
+</code></pre></div><h2 id=projects-which-use-cooklang>Projects Which Use Cooklang</h2>
 <ul>
-<li><a href=https://github.com/cooklang/spec/tree/main/tests>Canonical tests</a></li>
-<li><a href=https://github.com/addcninblue/tree-sitter-cooklang>Tree-sitter</a></li>
-</ul>
-<p>Particular languages:</p>
-<ul>
-<li><a href=https://github.com/heytherewill/cooklangnet>.NET</a></li>
-<li><a href=https://github.com/cooklang/cook-in-c>C</a> WIP</li>
-<li><a href=https://github.com/kiranshila/cooklang-clj>Clojure</a></li>
-<li><a href=https://github.com/aquilax/cooklang-go>Go</a></li>
-<li><a href=https://github.com/michal-h21/cooklang-lua>Lua</a></li>
-<li><a href=https://github.com/luizribeiro/py-cooklang>Python</a></li>
-<li><a href=https://github.com/umgefahren/cook-with-rust>Rust</a> WIP</li>
-<li><a href=https://github.com/cooklang/CookInSwift>Swift</a></li>
+<li><a href=https://biowaffeln.github.io/cooklang-parser/>Cooklang playground</a></li>
+<li><a href=https://github.com/deathau/cooklang-obsidian>Obsidian plugin</a></li>
+<li><a href=https://github.com/cooklang/CookCLI>Official command line application</a></li>
+<li><a href=https://cooklang.org/app/>Official iOS application</a></li>
 </ul>
 <h2 id=syntax-highlighting>Syntax Highlighting</h2>
 <ul>
 <li><a href=https://github.com/cooklang/cook-mode>Emacs</a></li>
+<li><a href=https://github.com/le-jun/cooklang.nanorc>Nano</a></li>
 <li><a href=https://github.com/cooklang/CookSublime>SublimeText</a></li>
 <li><a href=https://github.com/luizribeiro/vim-cooklang>Vim</a></li>
 <li><a href=https://github.com/cooklang/CookVSCode>VSCode</a></li>
@@ -241,6 +224,9 @@ Add @salt{1|1|1%tsp} -- as this
 <div class=d-flex>
 <div class=mr-auto>
 <a href=https://github.com/cooklang>github.com/cooklang</a>
+</div>
+<div class=mr-auto>
+<a href=https://discord.gg/fUVVvUzEEK>Discord Server</a>
 </div>
 <div>
 <a href="https://twitter.com/cooklangorg?ref_src=twsrc%5Etfw" class=twitter-follow-button data-show-count=false>Follow @cooklangorg</a><script async src=https://platform.twitter.com/widgets.js></script>

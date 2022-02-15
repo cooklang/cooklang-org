@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Download CookCLI - Cooklang: recipe markup language</title>
+<title>Cooklang Roadmap - Cooklang: recipe markup language</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=icon href=/favicon.png>
 <link rel=stylesheet href=/css/style.min.6b810f933e568f3ba607b4f5b1cf85fec6ca57b9c291b318c80724d874a7abf3.css>
@@ -48,12 +48,12 @@
 <span>Home</span>
 </a>
 </li>
-<li class=menu-item-docs>
+<li class="menu-item-docs active">
 <a href=/docs/>
 <span>Docs</span>
 </a>
 </li>
-<li class="menu-item-cli active">
+<li class=menu-item-cli>
 <a href=/cli/>
 <span>CLI</span>
 </a>
@@ -77,42 +77,49 @@
 <div class="col-12 col-md-3 mb-3">
 <div class=sidebar>
 <div class=docs-menu>
-<h4>CLI</h4>
+<h4>Docs</h4>
 <ul>
 <li>
-<a href=/cli/help/>Using CookCLI</a>
+<a href=/docs/spec/>Cooklang Specification</a>
 </li>
 <li class=active>
-<a href=/cli/download/>Download CookCLI</a>
+<a href=/docs/roadmap/>Cooklang Roadmap</a>
+</li>
+<li>
+<a href=/docs/for-developers/>For Developers</a>
+</li>
+<li>
+<a href=/docs/best-practices/>Tips, tricks, and best practices</a>
+</li>
+<li>
+<a href=/docs/syntax-highlighting/>Syntax Highlighting</a>
+</li>
+<li>
+<a href=/docs/examples/>Examples</a>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="col-12 col-md-9">
-<h1 class=title>Download CookCLI</h1>
+<h1 class=title>Cooklang Roadmap</h1>
 <div class=content>
-<a href=https://github.com/cooklang/CookCLI>
-<img style=position:absolute;top:0;right:0;border:0 src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149" alt="Fork me on GitHub">
-</a>
-<h2 id=linux>Linux</h2>
-<p>Binary download:</p>
-<a href=https://github.com/cooklang/CookCLI/releases/download/v0.1.3/CookCLI_0.1.3_linux_amd64.zip>
-<button type=button class=button>
-Download 64-bit
-</button>
-</a>
-<p>​</p>
-<h2 id=macos>macOS</h2>
-<p>Homebrew:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>brew tap cooklang/tap
-brew install cooklang/tap/cook
-</code></pre></div><p>Binary download:</p>
-<a href=https://github.com/cooklang/CookCLI/releases/download/v0.1.3/CookCLI_0.1.3_darwin_amd64_arm64.zip>
-<button type=button class=button>
-Download 64-bit
-</button>
-</a>
+<h2 id=roadmap-work-in-progress>Roadmap (work in progress)</h2>
+<h3 id=servings>Servings</h3>
+<p>You can manually add information for scaling serving size up or down. Serving size information comes in two parts: the metadata tag, and ingredient tags.
+The metadata tag defines the serving sizes the recipe supports.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+</code></pre></div><p>Then, you can automatically scale ingredient quantities with <code>*</code>. This will multiply the quantity given by the number of servings selected.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+Add @milk{1/2*%cup} and mix until smooth.
+</code></pre></div><p>Alternatively, you can manually specify ingredient quantities for each serving size. This is useful for non-linear scaling.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+Add @milk{1|2|3%cup} and mix until smooth.
+</code></pre></div><p>If no ingredient scaling is defined, the same quantity will be used for all serving sizes.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; servings: 2|4|8
+Add @salt{1%tsp} -- this is the same
+Add @salt{1|1|1%tsp} -- as this
+</code></pre></div>
 </div>
 </div>
 </div>
