@@ -2,238 +2,139 @@
 <head>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Cooklang Specification - Cooklang: recipe markup language</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Cooklang Specification - Cooklang: recipe markup language</title><meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=icon href=/favicon.png>
 <link rel=stylesheet href=/css/style.min.6b810f933e568f3ba607b4f5b1cf85fec6ca57b9c291b318c80724d874a7abf3.css>
-</head>
-<body class="page page-default-single">
+</head><body class="page page-default-single">
 <div id=main-menu-mobile class=main-menu-mobile>
 <ul>
 <li class=menu-item-home>
 <a href=/>
 <span>Home</span>
 </a>
-</li>
-<li class=menu-item-docs>
+</li><li class=menu-item-docs>
 <a href=/docs/>
 <span>Docs</span>
 </a>
-</li>
-<li class=menu-item-cli>
+</li><li class=menu-item-cli>
 <a href=/cli/>
 <span>CLI</span>
 </a>
-</li>
-<li class="menu-item-ios app">
+</li><li class="menu-item-ios app">
 <a href=/app/>
 <span>iOS app</span>
 </a>
-</li>
-</ul>
-</div>
-<div class=wrapper>
+</li></ul></div><div class=wrapper>
 <div class=header>
 <div class=container>
 <div class=logo>
 <a href=/><img alt=Logo src=/images/logo.svg></a>
-</div>
-<div class=logo-mobile>
+</div><div class=logo-mobile>
 <a href=/><img alt=Logo src=/images/logo.svg></a>
-</div>
-<div id=main-menu class=main-menu>
+</div><div id=main-menu class=main-menu>
 <ul>
 <li class=menu-item-home>
 <a href=/>
 <span>Home</span>
 </a>
-</li>
-<li class="menu-item-docs active">
+</li><li class="menu-item-docs active">
 <a href=/docs/>
 <span>Docs</span>
 </a>
-</li>
-<li class=menu-item-cli>
+</li><li class=menu-item-cli>
 <a href=/cli/>
 <span>CLI</span>
 </a>
-</li>
-<li class="menu-item-ios app">
+</li><li class="menu-item-ios app">
 <a href=/app/>
 <span>iOS app</span>
 </a>
-</li>
-</ul>
-</div>
-<button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
+</li></ul></div><button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
 <span class=hamburger-box>
 <span class=hamburger-inner></span>
 </span>
 </button>
-</div>
-</div>
-<div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+</div></div><div class="container pt-2 pt-md-6 pb-3 pb-md-6">
 <div class=row>
 <div class="col-12 col-md-3 mb-3">
 <div class=sidebar>
 <div class=docs-menu>
-<h4>Docs</h4>
-<ul>
+<h4>Docs</h4><ul>
 <li class=active>
 <a href=/docs/spec/>Cooklang Specification</a>
-</li>
-<li>
+</li><li>
 <a href=/docs/roadmap/>Cooklang Roadmap</a>
-</li>
-<li>
+</li><li>
 <a href=/docs/for-developers/>For Developers</a>
-</li>
-<li>
+</li><li>
 <a href=/docs/best-practices/>Tips, tricks, and best practices</a>
-</li>
-<li>
+</li><li>
 <a href=/docs/syntax-highlighting/>Syntax Highlighting</a>
-</li>
-<li>
+</li><li>
 <a href=/docs/examples/>Examples</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-9">
-<h1 class=title>Cooklang Specification</h1>
-<div class=content>
+</li></ul></div></div></div><div class="col-12 col-md-9">
+<h1 class=title>Cooklang Specification</h1><div class=content>
 <ul>
-<li><a href=#about-cooklang>About Cooklang</a></li>
-<li><a href=#the-cook-recipe-specification>The .cook Recipe Specification</a>
+<li><a href=#about-cooklang>About Cooklang</a></li><li><a href=#the-cook-recipe-specification>The .cook Recipe Specification</a>
 <ul>
-<li><a href=#ingredients>Ingredients</a></li>
-<li><a href=#comments>Comments</a></li>
-<li><a href=#metadata>Metadata</a></li>
-<li><a href=#cookware>Cookware</a></li>
-<li><a href=#timer>Timer</a></li>
-</ul>
-</li>
-<li><a href=#the-shopping-list-specification>The Shopping List Specification</a></li>
-<li><a href=#conventions>Conventions</a>
+<li><a href=#ingredients>Ingredients</a></li><li><a href=#comments>Comments</a></li><li><a href=#metadata>Metadata</a></li><li><a href=#cookware>Cookware</a></li><li><a href=#timer>Timer</a></li></ul></li><li><a href=#the-shopping-list-specification>The Shopping List Specification</a></li><li><a href=#conventions>Conventions</a>
 <ul>
-<li><a href=#adding-pictures>Adding Pictures</a></li>
-</ul>
-</li>
-<li><a href=#projects-which-use-cooklang>Projects Which Use Cooklang</a></li>
-<li><a href=#syntax-highlighting>Syntax Highlighting</a></li>
-</ul>
-<h2 id=about-cooklang>About Cooklang</h2>
-<p>Cooklang is the markup language at the center of an open-source ecosystem for cooking and recipe management. In Cooklang, each text file is a recipe written as plain-english instructions with markup syntax to add machine-parsible information about required ingredients, cookware, time, and metadata.</p>
-<h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2>
-<p>Below is the specification for defining a recipe in Cooklang.</p>
-<h3 id=ingredients>Ingredients</h3>
-<p>To define an ingredient, use the <code>@</code> symbol. If the ingredient&rsquo;s name contains multiple words, indicate the end of the name with <code>{}</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Then add @salt and @ground black pepper{} to taste.
-</code></pre></div><p>To indicate the quantity of an item, place the quantity inside <code>{}</code> after the name.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Poke holes in @potato{2}.
-</code></pre></div><p>To use a unit of an item, such as weight or volume, add a <code>%</code> between the quantity and unit.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
-</code></pre></div><h3 id=comments>Comments</h3>
-<p>You can add comments up to the end of the line to Cooklang text with <code>--</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>-- Don&#39;t burn the roux!
-
-Mash @potato{2%kg} until smooth -- alternatively, boil &#39;em first, then mash &#39;em, then stick &#39;em in a stew.
-</code></pre></div><p>Or block comments with <code>[- comment text -]</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Slowly add @milk{4%cup} [- TODO change units to litres -], keep mixing
-</code></pre></div><h3 id=metadata>Metadata</h3>
-<p>You can add metadata tags to your recipe for information such as source (or author), meal, total prep time, and number of people served.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>&gt;&gt; source: https://www.gimmesomeoven.com/baked-potato/
-&gt;&gt; time required: 1.5 hours
-&gt;&gt; course: dinner
-</code></pre></div><h3 id=cookware>Cookware</h3>
-<p>You can define any necessary cookware with <code>#</code>. Like ingredients, you don&rsquo;t need to use braces if it&rsquo;s a single word.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Place the potatoes into a #pot.
-Mash the potatoes with a #potato masher{}.
-</code></pre></div><h3 id=timer>Timer</h3>
-<p>You can define a timer using <code>~</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Lay the potatoes on a #baking sheet{} and place into the #oven{}. Bake for ~{25%minutes}.
-</code></pre></div><p>Timers can have a name too:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Boil @eggs{2} for ~eggs{3%minutes}.
-</code></pre></div><p>Applications can use this name in notifications.</p>
-<h2 id=the-shopping-list-specification>The Shopping List Specification</h2>
-<p>To support the creation of shopping lists by apps and the command line tool, Cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
-You can use <code>[]</code> to define a category name. These names are arbitrary, so you can customize them to meet your needs. For example, each category could be an aisle or section of the store, such as <code>[produce]</code> and <code>[deli]</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>[produce]
-potatoes
-
-[dairy]
-milk
-butter
-</code></pre></div><p>Or, you might be going to multiple stores, in which case you might use <code>[Tesco]</code> and <code>[Costco]</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>[Costco]
-potatoes
-milk
-butter
-
-[Tesco]
-bread
-salt
-</code></pre></div><p>You can also define synonyms with <code>|</code>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>[produce]
-potatoes
-
-[dairy]
-milk
-butter
-
-[deli]
-chicken
-
-[canned goods]
-tuna|chicken of the sea
-</code></pre></div><h2 id=conventions>Conventions</h2>
-<p>There&rsquo;re things which aren&rsquo;t part of the language specification but rather common conventions used in tools build on top of the language.</p>
-<h3 id=adding-pictures>Adding Pictures</h3>
-<p>You can add images to your recipe by including a supported image file (<code>.png</code>,<code>.jpg</code>) matching the name of the recipe recipe in the same directory.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Baked Potato.cook
-Baked Potato.jpg
-</code></pre></div><p>You can also add images for specific steps by including a step number before the file extension.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Chicken French.cook
-Chicken French.0.jpg
-Chicken French.3.jpg
-</code></pre></div><h2 id=projects-which-use-cooklang>Projects Which Use Cooklang</h2>
-<ul>
-<li><a href=https://biowaffeln.github.io/cooklang-parser/>Cooklang playground</a></li>
-<li><a href=https://github.com/deathau/cooklang-obsidian>Obsidian plugin</a></li>
-<li><a href=https://github.com/cooklang/CookCLI>Official command line application</a></li>
-<li><a href=https://cooklang.org/app/>Official iOS application</a></li>
-</ul>
-<h2 id=syntax-highlighting>Syntax Highlighting</h2>
-<ul>
-<li><a href=https://github.com/cooklang/cook-mode>Emacs</a></li>
-<li><a href=https://github.com/le-jun/cooklang.nanorc>Nano</a></li>
-<li><a href=https://github.com/cooklang/CookSublime>SublimeText</a></li>
-<li><a href=https://github.com/luizribeiro/vim-cooklang>Vim</a></li>
-<li><a href=https://github.com/cooklang/CookVSCode>VSCode</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=sub-footer>
+<li><a href=#adding-pictures>Adding Pictures</a></li></ul></li><li><a href=#projects-which-use-cooklang>Projects Which Use Cooklang</a></li><li><a href=#syntax-highlighting>Syntax Highlighting</a></li></ul><h2 id=about-cooklang>About Cooklang</h2><p>Cooklang is the markup language at the center of an open-source ecosystem for cooking and recipe management. In Cooklang, each text file is a recipe written as plain-english instructions with markup syntax to add machine-parsible information about required ingredients, cookware, time, and metadata.</p><h2 id=the-cook-recipe-specification>The .cook Recipe Specification</h2><p>Below is the specification for defining a recipe in Cooklang.</p><h3 id=ingredients>Ingredients</h3><p>To define an ingredient, use the <code>@</code> symbol. If the ingredient&rsquo;s name contains multiple words, indicate the end of the name with <code>{}</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Then add @salt and @ground black pepper{} to taste.
+</span></span></code></pre></div><p>To indicate the quantity of an item, place the quantity inside <code>{}</code> after the name.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Poke holes in @potato{2}.
+</span></span></code></pre></div><p>To use a unit of an item, such as weight or volume, add a <code>%</code> between the quantity and unit.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Place @bacon strips{1%kg} on a baking sheet and glaze with @syrup{1/2%tbsp}.
+</span></span></code></pre></div><h3 id=comments>Comments</h3><p>You can add comments up to the end of the line to Cooklang text with <code>--</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>-- Don&#39;t burn the roux!
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Mash @potato{2%kg} until smooth -- alternatively, boil &#39;em first, then mash &#39;em, then stick &#39;em in a stew.
+</span></span></code></pre></div><p>Or block comments with <code>[- comment text -]</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Slowly add @milk{4%cup} [- TODO change units to litres -], keep mixing
+</span></span></code></pre></div><h3 id=metadata>Metadata</h3><p>You can add metadata tags to your recipe for information such as source (or author), meal, total prep time, and number of people served.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&gt;&gt; source: https://www.gimmesomeoven.com/baked-potato/
+</span></span><span class=line><span class=cl>&gt;&gt; time required: 1.5 hours
+</span></span><span class=line><span class=cl>&gt;&gt; course: dinner
+</span></span></code></pre></div><h3 id=cookware>Cookware</h3><p>You can define any necessary cookware with <code>#</code>. Like ingredients, you don&rsquo;t need to use braces if it&rsquo;s a single word.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Place the potatoes into a #pot.
+</span></span><span class=line><span class=cl>Mash the potatoes with a #potato masher{}.
+</span></span></code></pre></div><h3 id=timer>Timer</h3><p>You can define a timer using <code>~</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Lay the potatoes on a #baking sheet{} and place into the #oven{}. Bake for ~{25%minutes}.
+</span></span></code></pre></div><p>Timers can have a name too:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Boil @eggs{2} for ~eggs{3%minutes}.
+</span></span></code></pre></div><p>Applications can use this name in notifications.</p><h2 id=the-shopping-list-specification>The Shopping List Specification</h2><p>To support the creation of shopping lists by apps and the command line tool, Cooklang includes a specification for a configuration file to define how ingredients should be grouped on the final shopping list.
+You can use <code>[]</code> to define a category name. These names are arbitrary, so you can customize them to meet your needs. For example, each category could be an aisle or section of the store, such as <code>[produce]</code> and <code>[deli]</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>[produce]
+</span></span><span class=line><span class=cl>potatoes
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>[dairy]
+</span></span><span class=line><span class=cl>milk
+</span></span><span class=line><span class=cl>butter
+</span></span></code></pre></div><p>Or, you might be going to multiple stores, in which case you might use <code>[Tesco]</code> and <code>[Costco]</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>[Costco]
+</span></span><span class=line><span class=cl>potatoes
+</span></span><span class=line><span class=cl>milk
+</span></span><span class=line><span class=cl>butter
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>[Tesco]
+</span></span><span class=line><span class=cl>bread
+</span></span><span class=line><span class=cl>salt
+</span></span></code></pre></div><p>You can also define synonyms with <code>|</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>[produce]
+</span></span><span class=line><span class=cl>potatoes
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>[dairy]
+</span></span><span class=line><span class=cl>milk
+</span></span><span class=line><span class=cl>butter
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>[deli]
+</span></span><span class=line><span class=cl>chicken
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>[canned goods]
+</span></span><span class=line><span class=cl>tuna|chicken of the sea
+</span></span></code></pre></div><h2 id=conventions>Conventions</h2><p>There&rsquo;re things which aren&rsquo;t part of the language specification but rather common conventions used in tools build on top of the language.</p><h3 id=adding-pictures>Adding Pictures</h3><p>You can add images to your recipe by including a supported image file (<code>.png</code>,<code>.jpg</code>) matching the name of the recipe recipe in the same directory.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Baked Potato.cook
+</span></span><span class=line><span class=cl>Baked Potato.jpg
+</span></span></code></pre></div><p>You can also add images for specific steps by including a step number before the file extension.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Chicken French.cook
+</span></span><span class=line><span class=cl>Chicken French.0.jpg
+</span></span><span class=line><span class=cl>Chicken French.3.jpg
+</span></span></code></pre></div><h2 id=projects-which-use-cooklang>Projects Which Use Cooklang</h2><ul>
+<li><a href=https://biowaffeln.github.io/cooklang-parser/>Cooklang playground</a></li><li><a href=https://github.com/deathau/cooklang-obsidian>Obsidian plugin</a></li><li><a href=https://github.com/cooklang/CookCLI>Official command line application</a></li><li><a href=https://cooklang.org/app/>Official iOS application</a></li></ul><h2 id=syntax-highlighting>Syntax Highlighting</h2><ul>
+<li><a href=https://github.com/cooklang/cook-mode>Emacs</a></li><li><a href=https://github.com/le-jun/cooklang.nanorc>Nano</a></li><li><a href=https://github.com/cooklang/CookSublime>SublimeText</a></li><li><a href=https://github.com/luizribeiro/vim-cooklang>Vim</a></li><li><a href=https://github.com/cooklang/CookVSCode>VSCode</a></li></ul></div></div></div></div></div></div><div class=sub-footer>
 <div class=container>
 <div class=d-flex>
 <div class=mr-auto>
 <a href=https://github.com/cooklang>github.com/cooklang</a>
-</div>
-<div class=mr-auto>
+</div><div class=mr-auto>
 <a href=https://discord.gg/fUVVvUzEEK>Discord Server</a>
-</div>
-<div>
+</div><div>
 <a href="https://twitter.com/cooklangorg?ref_src=twsrc%5Etfw" class=twitter-follow-button data-show-count=false>Follow @cooklangorg</a><script async src=https://platform.twitter.com/widgets.js></script>
-</div>
-</div>
-</div>
-</div>
-<script type=text/javascript src=/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js></script>
-</body>
-</html>
+</div></div></div></div><script type=text/javascript src=/js/scripts.min.bafc052229b4b40bf03c477d31c5cdd9352ece8afbadf35ab97ed14495098fc9.js></script>
+</body></html>
