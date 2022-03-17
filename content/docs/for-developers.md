@@ -22,7 +22,7 @@ Formal EBNF definition of the language can be found [here](https://github.com/co
 * [Python](https://github.com/luizribeiro/py-cooklang)
 * [Rust](https://github.com/umgefahren/cook-with-rust)
 * [Swift](https://github.com/cooklang/CookInSwift) ✅
-* [TypeScript](https://github.com/biowaffeln/cooklang-parser)
+* [TypeScript](https://github.com/cooklang/cooklang-ts) ✅
 
 ✅ – canonical tests passing.
 
