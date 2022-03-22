@@ -61,7 +61,7 @@ Ingredients:
     dried oregano                 3 tbsp
     fresh basil                   18 leaves
     fresh yeast                   1.6 g
-    garlic                        3 gloves
+    garlic                        3 cloves
     mozzarella                    3 packs
     parma ham                     3 packs
     salt                          25 g
@@ -74,7 +74,7 @@ Steps:
      2. Set oven to max temperature and heat pizza stone for about 40 minutes.
         [–]
      3. Make some tomato sauce with chopped tomato and garlic and dried oregano. Put on a pan and leave for 15 minutes occasionally stirring.
-        [chopped tomato: 3 cans; dried oregano: 3 tbsp; garlic: 3 gloves]
+        [chopped tomato: 3 cans; dried oregano: 3 tbsp; garlic: 3 cloves]
      4. Make pizzas putting some tomato sauce with spoon on top of flattened dough. Add fresh basil, parma ham and mozzarella.
         [fresh basil: 18 leaves; mozzarella: 3 packs; parma ham: 3 packs]
      5. Put in an oven for 4 minutes.
@@ -101,7 +101,7 @@ FRUIT AND VEG
     carrots                       300 g
     celeriac                      300 g
     fresh basil                   18 leaves
-    garlic                        3 gloves
+    garlic                        3 cloves
     lemon                         1 item
     onion                         1 large
     red onion                     2 items
