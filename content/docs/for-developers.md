@@ -20,6 +20,7 @@ Formal EBNF definition of the language can be found [here](https://github.com/co
 * [Go](https://github.com/aquilax/cooklang-go)
 * [Lua](https://github.com/michal-h21/cooklang-lua)
 * [Python](https://github.com/luizribeiro/py-cooklang)
+* [Ruby](https://github.com/drbragg/cooklang_rb) ✅
 * [Rust](https://github.com/umgefahren/cook-with-rust)
 * [Swift](https://github.com/cooklang/CookInSwift) ✅
 * [TypeScript](https://github.com/cooklang/cooklang-ts) ✅
