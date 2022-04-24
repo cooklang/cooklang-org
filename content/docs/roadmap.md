@@ -3,7 +3,7 @@ title: 'Cooklang Roadmap'
 date: 2022-02-15T19:30:08+10:00
 draft: false
 weight: 3
-summary: Expeted new features in Cooklang.
+summary: Expected new features in Cooklang.
 ---
 
 ## Roadmap (work in progress)
