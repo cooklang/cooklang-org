@@ -142,9 +142,9 @@ Run a web-server:
 
 ![server](https://user-images.githubusercontent.com/4168619/148116974-7010e265-5aa8-4990-a4b9-f85abe3eafb0.png)
 
-## iOS app
+## Mobile app
 
-We created the [iOS app](/app/) to assist you while cooking, shopping, and meal planning. Simply connect the app to your iCloud, open a recipe, and start cooking.
+We created a mobile [app](/app/) (iOS only at the moment, subscribe for Android beta) to assist you while cooking, shopping, and meal planning. Simply connect the app to your recipe storage, open a recipe, and start cooking.
 
 ![Recipes](/app/recipes.png)
 ![Recipe](/app/recipe-ingredients.png)

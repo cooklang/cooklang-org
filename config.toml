@@ -29,7 +29,7 @@ summaryLength = 30
     weight = 3
 
 [[menu.main]]
-    name = "iOS app"
+    name = "Mobile App"
     url = "/app/"
     weight = 4
 
