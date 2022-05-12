@@ -25,4 +25,4 @@ Once golden underneath, flip the pancake over and cook for 1 further minute, or 
 Serve straightaway with your favourite topping. -- Add your favorite topping here to make sure it's included in your meal plan!
 ```
 
-More examples https://github.com/Cooklang/spec/tree/main/examples or in [Community recipes](https://github.com/Cooklang/recipes)
+More examples https://github.com/Cooklang/spec/tree/main/examples, [Community recipes](https://github.com/Cooklang/recipes) or in [Awesome Cooklang Recipes](https://github.com/cooklang/awesome-cooklang-recipes)
