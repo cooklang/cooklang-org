@@ -8,6 +8,7 @@ summary: Instructions for installing syntax highlighting addons for some of the 
 If you would like to install a Cooklang syntax highlighting addon for your favorite text editor, here are the instructions for the programs we support.
 
 * [Emacs via GitHub](#emacs-via-github)
+* [Micro via GitHub](#micro-via-github)
 * [Nano via GitHub](#nano-via-github)
 * [Sublime via Package Control](#sublime-via-package-control)
 * [Vim via GitHub](#vim-via-github)
@@ -16,6 +17,10 @@ If you would like to install a Cooklang syntax highlighting addon for your favor
 ## Emacs via GitHub
 
 * [Install from here](https://github.com/cooklang/cook-mode)
+
+## Micro via GitHub
+
+* [Install from here](https://github.com/nicholaswilde/cooklang-micro)
 
 ## Nano via GitHub
 
