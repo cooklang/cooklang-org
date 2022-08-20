@@ -26,7 +26,6 @@ Table of Contents
       * [`prettify`](#prettify)
       * [`image`](#image)
    * [`shopping-list`](#shopping-list)
-   * [`fetch`](#fetch)
    * [`server`](#server)
    * [`seed`](#seed)
    * [`version`](#version)
@@ -48,7 +47,6 @@ SUBCOMMANDS:
   recipe                  Manage recipes and recipe files
   shopping-list           Create a shopping list
   server                  Run a webserver to serve your recipes on the web
-  fetch                   Pull recipes from the community recipe repository
   seed                    Populate directory with seed recipes
   version                 Show the CookCLI version information
 
@@ -145,20 +143,6 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-
-## `fetch`
-
-```
-OVERVIEW: Pull recipes from the community recipe repository
-
-USAGE: cook fetch [<community-recipe-path>]
-
-ARGUMENTS:
-  <community-recipe-path> Path
-
-OPTIONS:
-  -h, --help              Show help information.
-```
 
 ## `server`
 
