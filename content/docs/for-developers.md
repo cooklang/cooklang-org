@@ -17,15 +17,15 @@ Formal EBNF definition of the language can be found [here](https://github.com/co
 * [C](https://github.com/cooklang/cook-in-c)
 * [Clojure](https://github.com/kiranshila/cooklang-clj)
 * [Dart](https://github.com/aquilax/cooklang-dart) ✅
-* [JS](https://github.com/deathau/cooklang-js)1, [JS](https://github.com/cadpnq/cooklangjs)2
 * [Go](https://github.com/aquilax/cooklang-go)
+* [Haskell](https://github.com/isaacvando/cooklang-hs) ✅
+* [JS](https://github.com/deathau/cooklang-js)1, [JS](https://github.com/cadpnq/cooklangjs)2
 * [Lua](https://github.com/michal-h21/cooklang-lua)
 * [Python](https://github.com/luizribeiro/py-cooklang)
 * [Ruby](https://github.com/drbragg/cooklang_rb) ✅
 * [Rust](https://github.com/umgefahren/cook-with-rust)
 * [Swift](https://github.com/cooklang/CookInSwift) ✅
 * [TypeScript](https://github.com/cooklang/cooklang-ts) ✅
-* [Haskell](https://github.com/isaacvando/cooklang-hs) ✅
 
 ✅ – canonical tests passing.
 
