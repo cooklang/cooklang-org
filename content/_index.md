@@ -142,6 +142,10 @@ Run a web-server:
 
 ![server](https://user-images.githubusercontent.com/4168619/148116974-7010e265-5aa8-4990-a4b9-f85abe3eafb0.png)
 
+Here's a quick demo to see its in action:
+
+{{< youtube hQNRt-b3eps >}}
+
 ## Mobile app
 
 We created a mobile [app](/app/) (iOS only at the moment, subscribe for Android beta) to assist you while cooking, shopping, and meal planning. Simply connect the app to your recipe storage, open a recipe, and start cooking.
