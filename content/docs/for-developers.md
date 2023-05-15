@@ -13,7 +13,7 @@ Formal EBNF definition of the language can be found [here](https://github.com/co
 * [Tree-sitter](https://github.com/addcninblue/tree-sitter-cooklang)
 
 ### Parser implementations
-* [.NET](https://github.com/heytherewill/cooklangnet)
+* [.NET](https://github.com/heytherewill/cooklangnet) ✅
 * [C](https://github.com/cooklang/cook-in-c)
 * [Clojure](https://github.com/kiranshila/cooklang-clj)
 * [Dart](https://github.com/aquilax/cooklang-dart) ✅
