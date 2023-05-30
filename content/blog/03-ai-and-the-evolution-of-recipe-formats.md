@@ -1,9 +1,11 @@
 ---
-title: 'AI and the Evolution of Recipe Formats'
+title: 'Generating a recipe graph with ChatGPT'
 date: 2023-05-26T19:27:37+10:00
-weight: 100
+weight: 80
 summary: This text discusses the challenges of translating traditional recipe formats into a structure understandable by computers. It highlights the issues faced by AI in comprehending the sequence of ingredients and cooking steps, and the steps taken to create a new, AI-friendly format. The piece delves into attempts to design a universal tool for recipe importation and conversion, and the issues encountered. It then outlines a new approach using AI to trace ingredients and cooking actions to create a comprehensive recipe graph, leading to an enhanced user experience and potentially revolutionizing the way we engage with recipes.
 ---
+
+![](/blog/part-recipe-graph.png)
 
 Recipes have been structured in a similar format for a long time; a list of ingredients followed by the steps necessary to create a dish. While this works for human readers, it's less convenient for computers. They struggle to understand when each ingredient is used and what happens in each step. This makes it challenging to design applications that provide step-by-step recipe instructions, let alone enhance the overall cooking process.
 
