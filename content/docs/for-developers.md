@@ -21,6 +21,7 @@ Formal EBNF definition of the language can be found [here](https://github.com/co
 * [Haskell](https://github.com/isaacvando/cooklang-hs) ✅
 * [JS](https://github.com/deathau/cooklang-js)1, [JS](https://github.com/cadpnq/cooklangjs)2
 * [Lua](https://github.com/michal-h21/cooklang-lua)
+* [Perl](https://metacpan.org/pod/CookLang) ✅
 * [Python](https://github.com/luizribeiro/py-cooklang)
 * [Ruby](https://github.com/drbragg/cooklang_rb) ✅
 * [Rust](https://github.com/cooklang/cooklang-rs)✅, [Rust](https://github.com/umgefahren/cook-with-rust)
