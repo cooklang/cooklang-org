@@ -144,7 +144,7 @@ Chicken French.3.jpg
 
 ## Projects Which Use Cooklang
 
-* [Cooklang playground](https://biowaffeln.github.io/cooklang-parser/)
+* [Cooklang playground](https://cooklang.github.io/cooklang-rs/) or [alternative](https://biowaffeln.github.io/cooklang-parser/).
 * [Obsidian plugin](https://github.com/deathau/cooklang-obsidian)
 * [Official command line application](https://github.com/cooklang/CookCLI)
 * [Official iOS application](https://cooklang.org/app/)
