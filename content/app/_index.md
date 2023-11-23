@@ -32,6 +32,8 @@ Please open an issue [here](https://github.com/cooklang/cooklang-ios-app/issues)
 
 ## Android app (signup for beta testing)
 
+UPDATE: applications are closed now.
+
 If you want to help us beta test CooklangApp for Android you can join our beta testing program. You will dive in into Cooklang ecosystem and help us make it better.
 
 You will need:
@@ -42,4 +44,3 @@ Next steps:
 
 You will recieve an email with an invitation link and setup instructions. Submit your feedback by email: {{< email >}}.
 
-{{< sign-up-form >}}
