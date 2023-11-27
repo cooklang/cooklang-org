@@ -3,7 +3,7 @@ title: 'Download CookCLI'
 date: 2021-05-20T19:30:08+10:00
 draft: false
 weight: 5
-summary: Links and instructions to install CookCLI on Linux and MacOS.
+summary: Links and instructions to download CookCLI.
 ---
 
 
@@ -13,29 +13,4 @@ summary: Links and instructions to install CookCLI on Linux and MacOS.
     </a>
 {{< /rawhtml >}}
 
-
-## Linux
-
-Binary download:
-
-{{< cta-button "Download 64-bit" "https://github.com/cooklang/CookCLI/releases/download/v0.1.6/CookCLI_0.1.6_linux_amd64.zip" >}}
-
-&#8203;
-
-{{< cta-button "Download ARM 64-bit" "https://github.com/cooklang/CookCLI/releases/download/v0.1.5/CookCLI_0.1.5_linux_arm64.zip" >}}
-
-&#8203;
-
-## macOS
-
-Homebrew:
-
-```
-brew tap cooklang/tap
-brew install cooklang/tap/cook
-```
-
-Binary download:
-
-{{< cta-button "Download 64-bit" "https://github.com/cooklang/CookCLI/releases/download/v0.1.6/CookCLI_0.1.6_darwin_amd64_arm64.zip" >}}
-
+Please, download latest CLI version from [GitHub Releases](https://github.com/cooklang/cookcli/releases).
