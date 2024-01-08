@@ -13,6 +13,7 @@ If you would like to install a Cooklang syntax highlighting addon for your favor
 * [Sublime via Package Control](#sublime-via-package-control)
 * [Vim via GitHub](#vim-via-github)
 * [VSCode via Extensions](#vscode-via-extensions)
+* [Kakoune via GitHub](#kakoune-via-github)
 
 ## Emacs via GitHub
 
@@ -43,3 +44,7 @@ It is highly recommended to install Cooklang with Package Control as it automati
 
 1. Find Cooklang using the Extensions View.
 2. Install an extension.
+
+## Kakoune Via GitHub
+
+* [Install from here](https://github.com/cooklang/cooklang-kak)
