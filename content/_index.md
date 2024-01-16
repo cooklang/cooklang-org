@@ -153,3 +153,7 @@ We created a mobile [app](/app/) (iOS only at the moment, subscribe for Android 
 ![Recipes](/app/recipes.png)
 ![Recipe](/app/recipe-ingredients.png)
 ![Shopping list](/app/shopping-list.png)
+
+## Our newsletter
+
+{{< newsletter-form >}}
