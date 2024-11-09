@@ -42,3 +42,5 @@ Of course, not everyone wants standardization. There’s a beauty, they argue, i
 If anything, embracing a recipe standard could open up a whole new world for cooking. With the basics encoded and universally understood, chefs and home cooks alike would be free to push boundaries, try new things, and share their innovations in a format anyone could follow. 
 
 So, is it time we standardized recipes? Absolutely. It’s time to let recipes grow up. We owe it to ourselves to take something as fundamental as cooking and give it the clarity, the accessibility, and the scalability it deserves.
+
+-Alexey
